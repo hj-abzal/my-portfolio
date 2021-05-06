@@ -1,6 +1,5 @@
 import React from 'react';
 import style from './Works.module.css';
-import containerStyle from './../common/common-css-styles.module.css'
 import { Work } from './Work/Work';
 
 export const Works = () => {

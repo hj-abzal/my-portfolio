@@ -1,0 +1,15 @@
+.footer {
+  height: 210px;
+  background-color: aqua;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.items {
+  height: 60px;
+  border: 1px solid;
+  display: flex;
+  justify-self: space-between;
+}
