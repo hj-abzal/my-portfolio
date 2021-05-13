@@ -1,6 +1,6 @@
 import React from 'react';
 import style from './Main.module.css';
-import containerStyle from './../common/common-css-styles.module.css'
+import containerStyle from './../Common/common-css-styles.module.css'
 
 export const Main = () => {
     return (
@@ -13,7 +13,6 @@ export const Main = () => {
                 </div>
                 <div className={style.photo}></div>
             </div>
-
-        </div>
+        </div >
     )
 }
