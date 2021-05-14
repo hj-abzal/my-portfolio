@@ -1,13 +1,29 @@
 import React from 'react';
+import { HeaderDataType } from '../Header/Header';
 import style from './Nav.module.css';
 
-export const Nav = () => {
+
+type NavPropsType = {
+    headerData: HeaderDataType
+    isEnglish: boolean
+    isLight: boolean
+}
+export const Nav = (props: NavPropsType) => {
+    const theme = props.isLight ? style.aLight : style.aDark;
     return (
+
         <div className={style.nav}>
-            <a href="">Home Page</a>
-            <a href="">Skills </a>
-            <a href="">Projects</a>
-            <a href="">Contacts</a>
+            {
+                props.isEnglish ? <div className={style.navList}>
+                    {props.headerData.inEnglish.map(e => <div > <a className={theme} href="">{e}</a> </div>)}
+                </div>
+                    :
+                    <div className={style.navList} >
+                        {props.headerData.inRussian.map(e => <a className={theme} href="">{e}</a>)}
+
+                    </div>
+            }
+
         </div>
     )
 }

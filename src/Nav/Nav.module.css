@@ -4,3 +4,18 @@
   display: flex;
   justify-content: space-between;
 }
+.navList {
+  width: 300px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.aLight {
+  color: rgb(0, 0, 0);
+  text-decoration: none;
+}
+
+.aDark {
+  color: rgb(255, 255, 255);
+  text-decoration: none;
+}
