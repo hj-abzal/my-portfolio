@@ -9,17 +9,16 @@ type NavPropsType = {
     isLight: boolean
 }
 export const Nav = (props: NavPropsType) => {
-    const theme = props.isLight ? style.aLight : style.aDark;
     return (
 
         <div className={style.nav}>
             {
                 props.isEnglish ? <div className={style.navList}>
-                    {props.headerData.inEnglish.map(e => <div > <a className={theme} href="">{e}</a> </div>)}
+                    {props.headerData.inEnglish.map(e => <div > <a className={style.aDark} href="">{e}</a> </div>)}
                 </div>
                     :
                     <div className={style.navList} >
-                        {props.headerData.inRussian.map(e => <a className={theme} href="">{e}</a>)}
+                        {props.headerData.inRussian.map(e => <a className={style.aDark} href="">{e}</a>)}
 
                     </div>
             }

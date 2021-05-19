@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React from 'react';
 import { useDispatch, useSelector } from 'react-redux';
 import { Nav } from '../Nav/Nav';
 import { ChangeAppLanguageAC, ChangeAppThemeAC } from '../Redux/portfolioReducer';
@@ -10,8 +10,7 @@ import { LangSwitcher } from './LaguageSwitcher/LangSwitcher';
 
 
 type HeaderPropsType = {
-    isLight: boolean
-    inEnglish: boolean
+
 }
 
 export type HeaderDataType = {
@@ -19,20 +18,23 @@ export type HeaderDataType = {
     inEnglish: string[];
 }
 export const Header = (props: HeaderPropsType) => {
+    const isLight = useSelector<AppStateType, boolean>(state => state.portfolio.isLight)
+    const inEnglish = useSelector<AppStateType, boolean>(state => state.portfolio.inEnglish)
+
     const dispatch = useDispatch();
     const changeTheme = () => {
-        dispatch(ChangeAppThemeAC(!props.isLight))
+        dispatch(ChangeAppThemeAC(!isLight))
     }
     const changeLang = () => {
-        dispatch(ChangeAppLanguageAC(!props.inEnglish))
+        dispatch(ChangeAppLanguageAC(!inEnglish))
     }
     const headerData = useSelector<AppStateType, HeaderDataType>(store => store.data.header)
-    const theme = props.isLight ? `${style.header} ${themeStyle.light}` : `${style.header} ${themeStyle.dark}`
+    const theme =  `${style.header} ${themeStyle.dark}`
     return (
         <div className={theme}>
-            <LangSwitcher inEnglish={props.inEnglish} changeLang={changeLang} />
-            <ThemeButton isLight={props.isLight} changeTheme={changeTheme} />
-            <Nav headerData={headerData} isEnglish={props.inEnglish}  isLight={props.isLight}/>
+            <LangSwitcher inEnglish={inEnglish} changeLang={changeLang} />
+            <ThemeButton isLight={isLight} changeTheme={changeTheme} />
+            <Nav headerData={headerData} isEnglish={inEnglish} isLight={isLight} />
         </div>
     )
 }

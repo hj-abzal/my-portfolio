@@ -6,11 +6,10 @@ type LangSwitcherPropsType = {
     inEnglish: boolean
     changeLang: () => void
 }
-export const LangSwitcher = React.memo((props: LangSwitcherPropsType ) => {
+export const LangSwitcher = React.memo((props: LangSwitcherPropsType) => {
     return (
         <div>
             <input type="checkbox" onClick={props.changeLang} />
-            <span className={s.slider}></span>
         </div>
     )
 })

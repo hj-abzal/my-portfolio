@@ -2,8 +2,13 @@ import React from 'react';
 import style from './Skills.module.css';
 import containerStyle from './../Common/common-css-styles.module.css'
 import { Skill } from './Skill/Skill';
+import { useSelector } from 'react-redux';
+import { AppStateType } from '../Redux/Store';
 
 export const Skills = () => {
+    const isLight = useSelector<AppStateType, boolean>( state => state.portfolio.isLight)
+    const inEnglish = useSelector<AppStateType, boolean>( state => state.portfolio.inEnglish)
+  
     const description = [
         "fjsdlfjsdafjsdlfjsdlfjf;",
         "fjsdlfjsdafjsdlfjsdlfjf;",

@@ -1,7 +1,12 @@
 import React from 'react';
+import { useSelector } from 'react-redux';
+import { AppStateType } from '../Redux/Store';
 import style from './Contacts.module.css';
 
 export const Contacts = () => {
+    const isLight = useSelector<AppStateType, boolean>( state => state.portfolio.isLight)
+    const inEnglish = useSelector<AppStateType, boolean>( state => state.portfolio.inEnglish)
+  
     return (
         <div className={style.contactsBlock}>
             <div className={style.container}>
@@ -9,7 +14,7 @@ export const Contacts = () => {
                 <div className={style.form}>
                     <form  >
                         <p>
-                            <input type="text" name="name" value="Имя автора" />
+                            <input className={style.input} type="text" name="name" value="Имя автора" />
                             <label >Имя</label>
                         </p>
                         <p>

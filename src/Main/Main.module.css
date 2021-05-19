@@ -1,10 +1,15 @@
 .mainBlock {
   height: 100vh;
-  background-color: rgb(18, 37, 143);
+  background-color: rgb(255, 255, 255);
+}
+.darkMode {
+  height: 100vh;
+  background-color: rgb(0, 0, 0);
 }
 
 .text {
   width: 300px;
+  border: 2px solid rgb(2, 56, 2);
   background-color: rgb(255, 237, 213);
 }
 

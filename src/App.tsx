@@ -11,17 +11,18 @@ import { Skills } from './Skills/Skills';
 import { Works } from './Works/Works';
 
 function App() {
-  const isLight = useSelector<AppStateType, boolean>( state => state.portfolio.isLight)
-  const inEnglish = useSelector<AppStateType, boolean>( state => state.portfolio.inEnglish)
+
 
   return (
     <div className="App">
-      <Header isLight={isLight} inEnglish={inEnglish}/>
+      <Header />
       <Main />
       <Skills />
       <Works />
       <Contacts />
       <Footer />
+
+
     </div>
   );
 }
