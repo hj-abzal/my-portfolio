@@ -3,6 +3,7 @@ import style from './Main.module.css';
 import containerStyle from './../Common/common-css-styles.module.css'
 import { useSelector } from 'react-redux';
 import { AppStateType } from '../Redux/Store';
+import { ThemeButton } from '../Header/ThemeButton/ThemeButton';
 
 export const Main = () => {
     const isLight = useSelector<AppStateType, boolean>(state => state.portfolio.isLight)
