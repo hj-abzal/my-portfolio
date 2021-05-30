@@ -55,6 +55,8 @@ export const ThemeButton = React.memo((props: ThemeButtonPropsType) => {
     return (
         <div className={s.wrapper}>
             <Switch
+                color="primary"
+                style={{ color: "rgb(97, 218, 251)" }}
                 checked={props.isLight}
                 onChange={e => props.onClick(e.target.checked)}
             />

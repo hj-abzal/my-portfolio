@@ -13,11 +13,11 @@ export const Nav = (props: NavPropsType) => {
         <div className={style.nav}>
             {
                 props.isEnglish ? <div className={style.navList}>
-                    {props.headerData.inEnglish.map(e => <div > <a className={style.aDark} href="">{e}</a> </div>)}
+                    {props.headerData.inEnglish.map(e => <a className={style.a} href="">{e}</a>)}
                 </div>
                     :
                     <div className={style.navList} >
-                        {props.headerData.inRussian.map(e => <a className={style.aDark} href="">{e}</a>)}
+                        {props.headerData.inRussian.map(e => <a className={style.a} href="">{e}</a>)}
 
                     </div>
             }

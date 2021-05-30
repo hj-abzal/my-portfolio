@@ -1,21 +1,27 @@
 .nav {
   border: 1px solid;
-  width: 300px;
+  width: 400px;
+  height: 60px;
   display: flex;
   justify-content: space-between;
+  align-items: center;
 }
 .navList {
-  width: 300px;
+  width: 400px;
   display: flex;
   justify-content: space-between;
 }
 
-.aLight {
-  color: #ffffff(0, 0, 0);
+.a {
+  color: white;
+  width: 100px;
+  height: 60px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid;
   text-decoration: none;
-}
-
-.aDark {
-  color: #ffffff(15, 15, 15);
-  text-decoration: none;
+  font-style: normal;
+  -webkit-font-smoothing: antialiased;
+  font-size: 20px;
 }

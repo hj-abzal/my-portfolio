@@ -11,6 +11,8 @@
 
 .content {
   display: flex;
+  justify-content: space-around;
+  align-items: center;
 }
 
 .appLogo {
@@ -31,4 +33,16 @@
   to {
     transform: rotate(360deg);
   }
+}
+.title {
+  color: rgb(97, 218, 251);
+  margin-left: 10px;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 20px;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
 }

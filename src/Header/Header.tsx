@@ -31,10 +31,18 @@ export const Header = (props: HeaderPropsType) => {
     return (
         <div className={style.header}>
             <div className={style.content}>
-                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a7/React-icon.svg/1280px-React-icon.svg.png" className={style.appLogo} />
-                <LangSwitcher inEnglish={inEnglish} changeLang={changeLang} />
-                <ThemeButton isLight={isLight} onClick={changeTheme} />
-                <Nav headerData={headerData} isEnglish={inEnglish} />
+                <div className={style.logo}>
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a7/React-icon.svg/1280px-React-icon.svg.png" className={style.appLogo} />
+                    <span className={style.title}> React </span>
+                </div>
+                <div className={style.nav}>
+                    <Nav headerData={headerData} isEnglish={inEnglish} />
+                </div>
+                <div className={style.modes}>
+                    <LangSwitcher inEnglish={inEnglish} changeLang={changeLang} />
+                    <ThemeButton isLight={isLight} onClick={changeTheme} />
+                </div>
+
             </div>
         </div>
     )
