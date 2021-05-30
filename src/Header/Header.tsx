@@ -30,9 +30,12 @@ export const Header = (props: HeaderPropsType) => {
     const headerData = useSelector<AppStateType, HeaderDataType>(store => store.data.header)
     return (
         <div className={style.header}>
-            <LangSwitcher inEnglish={inEnglish} changeLang={changeLang} />
-            <ThemeButton isLight={isLight} onClick={changeTheme} />
-            <Nav headerData={headerData} isEnglish={inEnglish} isLight={isLight} />
+            <div className={style.content}>
+                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a7/React-icon.svg/1280px-React-icon.svg.png" className={style.appLogo} />
+                <LangSwitcher inEnglish={inEnglish} changeLang={changeLang} />
+                <ThemeButton isLight={isLight} onClick={changeTheme} />
+                <Nav headerData={headerData} isEnglish={inEnglish} />
+            </div>
         </div>
     )
 }

@@ -11,26 +11,13 @@ export const Contacts = () => {
         <div className={style.contactsBlock}>
             <div className={style.container}>
                 <h3 className={style.title}>Contact</h3>
-                <div className={style.form}>
-                    <form  >
-                        <p>
-                            <input className={style.input} type="text" name="name" value="Имя автора" />
-                            <label >Имя</label>
-                        </p>
-                        <p>
-                            <input type="text" name="email" value="name@example.com" />
-                            <label  >E-Mail</label>
-                        </p>
-                        <p>
-                            <textarea name="msg"></textarea>
-                        </p>
-
+                    <form className={style.contactForm}  >
+                        <input type="text" />
+                        <input type="text" />
+                        <textarea />
+                        <button type="submit" className={style.submitBtn}>Отправить</button>
                     </form>
-                </div>
-                <p >
-                    <input type="submit" value="Отправить" />
-                </p>
-
+             
             </div>
         </div>
     )

@@ -1,5 +1,4 @@
 .contactsBlock {
-  height: 100vh;
   background-color: rgb(119, 129, 190);
 }
 
@@ -16,14 +15,19 @@
 }
 
 .form {
-  width: 80%;
-  height: 50%;
+  width: 50%;
   border: 1px solid;
   display: flex;
-  justify-content: center;
+  justify-content: column;
   align-items: center;
 }
 
-.input {
-  background: aqua;
+.contactForm input,
+.contactForm textarea {
+  width: 100%;
+}
+
+.submitBtn {
+  padding: 10px 20px;
+  background-color: aqua;
 }

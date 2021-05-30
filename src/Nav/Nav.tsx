@@ -6,7 +6,6 @@ import style from './Nav.module.css';
 type NavPropsType = {
     headerData: HeaderDataType
     isEnglish: boolean
-    isLight: boolean
 }
 export const Nav = (props: NavPropsType) => {
     return (

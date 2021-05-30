@@ -15,7 +15,7 @@ export const Main = () => {
             <div className={containerStyle.container}>
                 <div className={style.text}>
                     <span> Hi there !</span>
-                    <h1> I am Abzal Suan</h1>
+                    <h1 className={style.name}> I am Abzal Suan</h1>
                     <p>FRONT-END devoloper</p>
                 </div>
                 <div className={style.photo}></div>
