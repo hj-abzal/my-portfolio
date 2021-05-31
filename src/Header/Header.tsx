@@ -41,6 +41,7 @@ export const Header = (props: HeaderPropsType) => {
                 <div className={style.modes}>
                     <LangSwitcher inEnglish={inEnglish} changeLang={changeLang} />
                     <ThemeButton isLight={isLight} onClick={changeTheme} />
+                    <span>  <a href="">GitHub</a>  </span>
                 </div>
 
             </div>

@@ -7,7 +7,6 @@ import { ThemeButton } from '../Header/ThemeButton/ThemeButton';
 
 export const Main = () => {
     const isLight = useSelector<AppStateType, boolean>(state => state.portfolio.isLight)
-    const inEnglish = useSelector<AppStateType, boolean>(state => state.portfolio.inEnglish)
 
     const theme = isLight ? style.mainBlock : style.darkMode
     return (

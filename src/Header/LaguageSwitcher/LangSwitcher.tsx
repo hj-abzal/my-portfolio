@@ -1,3 +1,4 @@
+import { Switch } from '@material-ui/core';
 import React from 'react';
 import s from './LangSwitcher.module.css'
 
@@ -9,7 +10,12 @@ type LangSwitcherPropsType = {
 export const LangSwitcher = React.memo((props: LangSwitcherPropsType) => {
     return (
         <div>
-            <input type="checkbox" onClick={props.changeLang} />
+            <Switch
+                color="primary"
+                style={{ color: "rgb(97, 218, 251)" }}
+                checked={props.inEnglish}
+                onClick={props.changeLang}
+            />
         </div>
     )
 })

@@ -1,14 +1,11 @@
 import React from 'react';
-import { useSelector } from 'react-redux';
 import './App.css';
 import { Contacts } from './Contacts/Contacts';
 import { Footer } from './Footer/Footer';
 import { Header } from './Header/Header';
 import { Main } from './Main/Main';
-import { InitialStateType } from './Redux/portfolioReducer';
-import { AppStateType } from './Redux/Store';
+import { Projects } from './Projects/Projects';
 import { Skills } from './Skills/Skills';
-import { Works } from './Works/Works';
 
 function App() {
 
@@ -18,7 +15,7 @@ function App() {
       <Header />
       <Main />
       <Skills />
-      <Works />
+      <Projects />
       <Contacts />
       <Footer />
 

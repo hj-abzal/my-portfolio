@@ -1,9 +1,8 @@
 import React from 'react';
-import style from './Skills.module.css';
+import style from './Projects.module.css';
 import containerStyle from './../Common/common-css-styles.module.css'
-import { Skill } from './Skill/Skill';
 
-export const Skills = () => {
+export const Projects = () => {
 
     const description = [
         "fjsdlfjsdafjsdlfjsdlfjf;",
@@ -15,9 +14,7 @@ export const Skills = () => {
             <div className={`${containerStyle.container} ${style.skillsContainer}`}>
                 <h2 className={style.title}>Skills</h2>
                 <div className={style.skills}>
-                    <Skill title="HTML" description={description[0]} />
-                    <Skill title="CSS" description={description[1]} />
-                    <Skill title="JS" description={description[2]} />
+                   
                 </div>
             </div>
         </div>
