@@ -1,0 +1,25 @@
+@import '../../styles/scss/variables.scss';
+.title {
+  margin: 0 0 30px;
+  position: relative;
+  color: $textColor;
+  .title h2 {
+    margin: 0;
+    font-size: 36px;
+    font-weight: 600;
+    text-transform: capitalize;
+    font-size: 36px;
+    line-height: 1.2;
+    letter-spacing: 2px;
+  }
+  &::before {
+    content: '';
+    position: absolute;
+    background: $primaryColor;
+    width: 55px;
+    height: 3px;
+    bottom: -30px;
+    left: 50%;
+    transform: translate(-50%, 50%);
+  }
+}

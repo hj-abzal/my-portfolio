@@ -15,7 +15,6 @@
 }
 
 .projectsBlock .projectsContainer .title {
-  background-color: blue;
   margin: 0 0 30px;
   position: relative;
 }
@@ -24,7 +23,7 @@
   margin: 0;
   font-size: 36px;
   font-weight: 600;
-  color: #fff;
+  color: #ffffff;
   text-transform: capitalize;
   font-size: 36px;
   line-height: 1.2;

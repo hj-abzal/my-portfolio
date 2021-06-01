@@ -1,13 +1,13 @@
 .title {
   margin: 0 0 30px;
   position: relative;
+  color: #ffffff;
 }
 
-.title h2 {
+.title .title h2 {
   margin: 0;
   font-size: 36px;
   font-weight: 600;
-  color: #fff;
   text-transform: capitalize;
   font-size: 36px;
   line-height: 1.2;
@@ -17,10 +17,12 @@
 .title::before {
   content: '';
   position: absolute;
-  background: rgb(97, 218, 251);
+  background: #61dafb;
   width: 55px;
   height: 3px;
   bottom: -30px;
   left: 50%;
-  transform: translate(-50%, 50%);
+  -webkit-transform: translate(-50%, 50%);
+          transform: translate(-50%, 50%);
 }
+/*# sourceMappingURL=Title.module.css.map */
