@@ -1,8 +1,10 @@
 .project {
-  width: 450px;
+  width: 540px;
   background-color: gray;
   display: flex;
   flex-direction: column;
+  margin: 0 0 30px;
+  background: #252527;
 }
 
 @media screen and (max-width: 577px) {
@@ -18,7 +20,7 @@
 }
 
 .img {
-  height: 250px;
+  height: 260px;
   background-color: rgb(38, 126, 64);
   display: flex;
   justify-content: center;
@@ -30,10 +32,20 @@
   padding: 10px 20px;
 }
 
+.descriptionBlock {
+  padding: 25px 20px;
+}
+
 .title {
-  font-size: 16px;
-  letter-spacing: 16xp;
+  font-size: 1.17em;
   margin: 0 0 5px;
   line-height: 1.2;
+  color: white;
+}
+
+.description {
+  line-height: 1.8;
+  font-weight: 400;
+  font-size: 12px;
   color: white;
 }
