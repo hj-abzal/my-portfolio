@@ -14,7 +14,7 @@ export const Project = (props: PropsType) => {
             </div>
             <div className={style.descriptionBlock}>
                 <h3 className={style.title}>{props.title}</h3>
-                <span className={style.description}>{props.description}</span>
+                <div className={style.description}>{props.description}</div>
             </div>
 
 

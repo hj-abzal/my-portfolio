@@ -25,3 +25,7 @@
   -webkit-font-smoothing: antialiased;
   font-size: 20px;
 }
+
+.a:hover {
+  color: rgb(97, 218, 251);
+}

@@ -68,14 +68,4 @@
 
 .modes a:hover {
   color: rgb(97, 218, 251);
-  width: 100px;
-  height: 40px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  border: 1px solid;
-  text-decoration: none;
-  font-style: normal;
-  -webkit-font-smoothing: antialiased;
-  font-size: 20px;
 }

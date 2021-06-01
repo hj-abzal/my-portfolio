@@ -1,7 +1,7 @@
 .projectsBlock {
   min-height: 100vh;
   padding: 100px 0;
-  background-color: brown;
+  background-color: rgb(40, 44, 52);
 }
 .projectsContainer {
   flex-direction: column;
@@ -37,7 +37,7 @@
 }
 
 .projects {
-  border: 1px solid;
+  border: 1px solid gray;
   width: 100%;
   display: flex;
   justify-content: space-between;

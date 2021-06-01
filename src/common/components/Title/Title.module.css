@@ -1,6 +1,4 @@
-
 .title {
-  background-color: blue;
   margin: 0 0 30px;
   position: relative;
 }
@@ -26,4 +24,3 @@
   left: 50%;
   transform: translate(-50%, 50%);
 }
-

@@ -4,13 +4,17 @@ import containerStyle from './../Common/common-css-styles.module.css'
 import { Project } from './Project/Project';
 import { Title } from '../Common/components/Title/Title';
 import todoimg from './../assets/images/Без названия.png'
-import socislNetworkImg from './../assets/images/images.png'
+import socislNetworkImg from './../assets/images/1(1).png'
 
 export const Projects = () => {
 
     const todoImg = {
         color: 'blue',
         backgroundImage: `url(${todoimg})`,
+    };
+    const socislNetwork = {
+        color: 'blue',
+        backgroundImage: `url(${socislNetworkImg})`,
     };
 
     const description = [
@@ -24,7 +28,7 @@ export const Projects = () => {
                 <Title text={"Projects"} />
                 <div className={style.projects}>
                     <Project style={todoImg} title="HTML" description={description[0]} />
-                    <Project title="CSS" description={description[1]} />
+                    <Project style={socislNetwork} title="CSS" description={description[1]} />
                     <Project title="JS" description={description[2]} />
                     <Project title="JS" description={description[2]} />
                 </div>
