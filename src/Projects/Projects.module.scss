@@ -1,0 +1,50 @@
+.projectsBlock {
+  min-height: 100vh;
+  padding: 100px 0;
+  background-color: rgb(40, 44, 52);
+  .projectsContainer {
+    flex-direction: column;
+    justify-content: flex-start;
+    .title {
+      background-color: blue;
+      margin: 0 0 30px;
+      position: relative;
+      & h2 {
+        margin: 0;
+        font-size: 36px;
+        font-weight: 600;
+        color: #fff;
+        text-transform: capitalize;
+        font-size: 36px;
+        line-height: 1.2;
+        letter-spacing: 2px;
+      }
+      &::before {
+        content: '';
+        position: absolute;
+        background: rgb(97, 218, 251);
+        width: 55px;
+        height: 3px;
+        bottom: -30px;
+        left: 50%;
+        transform: translate(-50%, 50%);
+      }
+    }
+
+    .projects {
+      border: 1px solid gray;
+      width: 100%;
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-start;
+      flex-wrap: wrap;
+      margin-top: 30px;
+      @media screen and (max-width: 940px) {
+        .projects {
+          justify-content: center;
+          flex-direction: column;
+        }
+      }
+    }
+  }
+}

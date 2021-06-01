@@ -1,20 +1,26 @@
 .projectsBlock {
   min-height: 100vh;
   padding: 100px 0;
-  background-color: rgb(40, 44, 52);
-}
-.projectsContainer {
-  flex-direction: column;
-  justify-content: flex-start;
+  background-color: #282c34;
 }
 
-.title {
+.projectsBlock .projectsContainer {
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+}
+
+.projectsBlock .projectsContainer .title {
   background-color: blue;
   margin: 0 0 30px;
   position: relative;
 }
 
-.title h2 {
+.projectsBlock .projectsContainer .title h2 {
   margin: 0;
   font-size: 36px;
   font-weight: 600;
@@ -25,30 +31,44 @@
   letter-spacing: 2px;
 }
 
-.title::before {
+.projectsBlock .projectsContainer .title::before {
   content: '';
   position: absolute;
-  background: rgb(97, 218, 251);
+  background: #61dafb;
   width: 55px;
   height: 3px;
   bottom: -30px;
   left: 50%;
-  transform: translate(-50%, 50%);
+  -webkit-transform: translate(-50%, 50%);
+          transform: translate(-50%, 50%);
 }
 
-.projects {
+.projectsBlock .projectsContainer .projects {
   border: 1px solid gray;
   width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: space-between;
-  align-items: flex-start;
-  flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
   margin-top: 30px;
 }
 
 @media screen and (max-width: 940px) {
-  .projects {
-    justify-content: center;
-    flex-direction: column;
+  .projectsBlock .projectsContainer .projects .projects {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
   }
 }
+/*# sourceMappingURL=Projects.module.css.map */
