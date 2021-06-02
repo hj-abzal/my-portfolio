@@ -10,6 +10,9 @@ export const Main = () => {
     const theme = isLight ? style.mainBlock : style.darkMode
     return (
         <div className={theme}>
+            {/* <video className={style.videoBgr} autoPlay loop muted>
+                <source src={'https://zippy.gfycat.com/ColossalInfiniteGreatwhiteshark.mp4'} type='video/mp4' />
+            </video> */}
             <div className={containerStyle.container}>
                 <div className={style.text}>
                     <span> Hi there !</span>

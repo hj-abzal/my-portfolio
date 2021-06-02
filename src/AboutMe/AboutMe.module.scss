@@ -1,0 +1,8 @@
+@import '../Common/styles/scss/mixin.scss';
+@import '../Common/styles/scss/variables.scss';
+
+.AboutMeBlock {
+  width: 100vw;
+  height: 100vh;
+  background-color: $textColor;
+}

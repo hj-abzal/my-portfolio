@@ -2,6 +2,18 @@
   height: 100vh;
   background-color: rgb(255, 255, 255);
 }
+
+/* .videoBgr {
+  position: absolute;
+  width: 100%;
+  left: 50%;
+  top: 50%;
+  height: 100%;
+  object-fit: cover;
+  transform: translate(-50%, -50%);
+  z-index: -2;
+
+} */
 .darkMode {
   height: 100vh;
   background-color: rgb(0, 0, 0);

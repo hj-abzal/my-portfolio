@@ -7,7 +7,6 @@
   flex-direction: column;
   margin: 0 0 30px;
   background-color: $bgSecondaryColor;
-  // background-color: rgb(42 48 54 / 230);
 
   @media screen and (max-width: 577px) {
     & {
@@ -51,6 +50,7 @@
   }
   .descriptionBlock {
     padding: 25px 20px;
+    background-color: $bgSecondaryColor;
 
     .title {
       @include text(1.17em, 1.2);

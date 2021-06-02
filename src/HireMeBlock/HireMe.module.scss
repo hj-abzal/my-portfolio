@@ -1,0 +1,12 @@
+@import '.././Common/styles/scss/variables.scss';
+@import '.././Common/styles/scss/mixin.scss';
+
+.hireMeBlock {
+  width: 100vw;
+  padding: 15px 0 0 0;
+  background-color: $bgSecondaryColor;
+  &h3 {
+    margin: 0;
+    color: &$textColor;
+  }
+}
