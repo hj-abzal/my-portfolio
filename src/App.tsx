@@ -17,10 +17,10 @@ function App() {
     <div className="App">
       <Header />
       <Main />
-      <Skills />
       <AboutMe />
-      <Projects />
+      <Skills />
       <HireMe />
+      <Projects />
       <ContactsFooter />
 
 

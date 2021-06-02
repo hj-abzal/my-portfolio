@@ -3,7 +3,7 @@ import { useDispatch, useSelector } from 'react-redux';
 import { Nav } from '../Nav/Nav';
 import { ChangeAppLanguageAC, ChangeAppThemeAC } from '../Redux/portfolioReducer';
 import { ThemeButton } from './ThemeButton/ThemeButton';
-import style from './Header.module.css';
+import style from './Header.module.scss';
 import { AppStateType } from '../Redux/Store';
 import { LangSwitcher } from './LaguageSwitcher/LangSwitcher';
 
@@ -32,15 +32,15 @@ export const Header = (props: HeaderPropsType) => {
         <div className={style.header}>
             <div className={style.content}>
                 <div className={style.logo}>
-                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a7/React-icon.svg/1280px-React-icon.svg.png" className={style.appLogo} />
+                    <img className={style.appLogo} src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a7/React-icon.svg/1280px-React-icon.svg.png" />
                     <span className={style.title}> React </span>
                 </div>
                 <div className={style.nav}>
                     <Nav headerData={headerData} isEnglish={inEnglish} />
                 </div>
                 <div className={style.modes}>
-                    <LangSwitcher inEnglish={inEnglish} changeLang={changeLang} />
-                    <ThemeButton isLight={isLight} onClick={changeTheme} />
+                    {/* <LangSwitcher inEnglish={inEnglish} changeLang={changeLang} /> */}
+                    {/* <ThemeButton isLight={isLight} onClick={changeTheme} /> */}
                     <span>  <a href="">GitHub</a>  </span>
                 </div>
 

@@ -1,0 +1,36 @@
+@import '../Common/styles/scss/mixin.scss';
+@import '../Common/styles/scss/variables.scss';
+
+.mainBlock {
+  height: 100vh;
+  background-color: $bgPrimaryColor;
+  .logo {
+    // transform: translate(0);
+    .logoImg {
+      width: 700px;
+    }
+  }
+  .text {
+    width: 400px;
+    background-color: $primaryColor;
+    border-radius: 30px;
+    color: $textColor;
+    font-size: 22px;
+    .name {
+      color: $bgPrimaryColor;
+      font-size: 60px;
+      margin: 0;
+      letter-spacing: 0.01em;
+    }
+  }
+  .photo {
+    width: 300px;
+    height: 400px;
+    background-color: rgb(255, 237, 213);
+  }
+}
+
+.darkMode {
+  height: 100vh;
+  background-color: rgb(0, 0, 0);
+}

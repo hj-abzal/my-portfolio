@@ -1,8 +1,9 @@
 import React from 'react';
-import style from './Main.module.css';
+import style from './Main.module.scss';
 import containerStyle from './../Common/styles/common-css-styles.module.css'
 import { useSelector } from 'react-redux';
 import { AppStateType } from '../Redux/Store';
+import reactImg from '../assets/images/reactimg.png'
 
 export const Main = () => {
     const isLight = useSelector<AppStateType, boolean>(state => state.portfolio.isLight)
@@ -10,16 +11,17 @@ export const Main = () => {
     const theme = isLight ? style.mainBlock : style.darkMode
     return (
         <div className={theme}>
-            {/* <video className={style.videoBgr} autoPlay loop muted>
-                <source src={'https://zippy.gfycat.com/ColossalInfiniteGreatwhiteshark.mp4'} type='video/mp4' />
-            </video> */}
+
             <div className={containerStyle.container}>
                 <div className={style.text}>
                     <span> Hi there !</span>
-                    <h1 className={style.name}> I am Abzal Suan</h1>
-                    <p>FRONT-END devoloper</p>
+                    <h1 className={style.name}> I'm Abzal Suan</h1>
+                    <p> A commited FRONT-END devoloper</p>
                 </div>
-                <div className={style.photo}></div>
+                {/* <div className={style.photo}></div> */}
+                <div className={style.logo}>
+                    <img  className={style.logoImg} src={reactImg} alt="" />
+                </div>
             </div>
         </div >
     )
