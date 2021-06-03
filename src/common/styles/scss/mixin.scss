@@ -1,7 +1,25 @@
 @import './variables.scss';
 
-@mixin text ($fontSize, $lineHight){
-    font-size: $fontSize;
-    line-height: $lineHight;
-    color: $textColor;
+@mixin text($fontSize, $lineHight) {
+  font-size: $fontSize;
+  line-height: $lineHight;
+  color: $textColor;
+}
+
+@mixin container() {
+  height: 100%;
+  width: 85%;
+  border: 1px solid;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+@mixin flexCenter() {
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }

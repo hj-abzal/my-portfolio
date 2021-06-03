@@ -2,40 +2,19 @@
 @import '../Common/styles/scss/variables.scss';
 
 .AboutMeBlock {
-  padding: 65px 0;
   width: 100vw;
   height: 100vh;
   background-color: $textColor;
-  .descriptios {
-    .title {
-      margin: 0 0 30px;
-      position: relative;
-      color: $textColor;
-      .aboutMe {
-        color: $bgPrimaryColor;
-        margin: 0;
-        font-size: 25px;
-        line-height: 1.3;
-        font-weight: 600;
-        text-transform: capitalize;
+  padding: 60px 0;
+
+  .container {
+    @include container();
+    .description {
+      .descText {
+        background-color: red;
       }
-      .descriptios {
-        font-size: 17px;
-        margin-right: 40px;
-        line-height: 1.7;
-      }
-      &::before {
-        content: '';
-        position: absolute;
-        background: $primaryColor;
-        width: 55px;
-        height: 3px;
-        bottom: -30px;
-        left: 50%;
-        transform: translate(-50%, 50%);
+      .code {
       }
     }
-  }
-  .code {
   }
 }
