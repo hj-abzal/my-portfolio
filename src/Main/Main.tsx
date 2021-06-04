@@ -19,9 +19,10 @@ export const Main = () => {
                     <p> A commited FRONT-END devoloper</p>
                 </div>
                 {/* <div className={style.photo}></div> */}
-                <div className={style.logo}>
-                    <img  className={style.logoImg} src={reactImg} alt="" />
-                </div>
+
+            </div>
+            <div className={style.logo}>
+                <img className={style.logoImg} src={reactImg} alt="" />
             </div>
         </div >
     )

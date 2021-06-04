@@ -9,10 +9,11 @@ export const HireMe: React.FC<HireMePropsType> = () => {
 
     return (
         <div className={style.hireMeBlock}>
-            <Title text={"Hire Me"} />
-            <div>
-
-                таймер
+            <div className={style.hireMeContainer}>
+                <Title text={"Hire Me"} />
+                <div className={style.timer}>
+                    таймер
+                </div>
             </div>
         </div>
     )

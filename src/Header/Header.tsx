@@ -2,10 +2,8 @@ import React from 'react';
 import { useDispatch, useSelector } from 'react-redux';
 import { Nav } from '../Nav/Nav';
 import { ChangeAppLanguageAC, ChangeAppThemeAC } from '../Redux/portfolioReducer';
-import { ThemeButton } from './ThemeButton/ThemeButton';
 import style from './Header.module.scss';
 import { AppStateType } from '../Redux/Store';
-import { LangSwitcher } from './LaguageSwitcher/LangSwitcher';
 
 
 type HeaderPropsType = {

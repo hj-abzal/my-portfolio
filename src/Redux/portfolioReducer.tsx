@@ -14,7 +14,7 @@ export type InitialStateType = {
 }
 export const initialState = {
     isLight: true,
-    inEnglish: false,
+    inEnglish: true,
     header: {
         inRussian: []
     }

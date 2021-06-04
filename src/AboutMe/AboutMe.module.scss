@@ -2,18 +2,79 @@
 @import '../Common/styles/scss/variables.scss';
 
 .AboutMeBlock {
-  width: 100vw;
-  height: 100vh;
+  display: flex;
+  align-items: center;
   background-color: $textColor;
   padding: 60px 0;
 
   .container {
     @include container();
-    .description {
-      .descText {
-        background-color: red;
+    .smallContainer {
+      display: flex;
+      width: 100%;
+      height: 400px;
+      border: 1px solid red;
+      .description {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        .title {
+          font-size: 25px;
+        }
+        .descText {
+          font-size: 17px;
+          margin: 0 40px 0 0;
+          padding: 0 3px;
+          font-size: 0.94em;
+          word-break: break-word;
+        }
       }
       .code {
+        width: 900px;
+        height: 400px;
+        display: flex;
+        .editor {
+          width: 570px;
+          height: 100%;
+          background-color: #20232a;
+
+          border-bottom-left-radius: 15px;
+          border-top-left-radius: 15px;
+
+          .header {
+            border-top-left-radius: 15px;
+            height: 40px;
+            background-color: $bgPrimaryColor;
+            padding-left: 10px;
+            & p {
+              color: #999;
+              font-size: 14px;
+              font-weight: 700;
+              line-height: 3;
+              text-transform: uppercase;
+              text-align: start;
+              letter-spacing: 0.08em;
+              margin: 0;
+            }
+          }
+        }
+        .result {
+          width: 250px;
+          border: 2px solid green;
+          .resultHeader {
+            padding-left: 10px;
+            .resultHeaderText {
+              color: rgb(109, 109, 109);
+              font-size: 14px;
+              font-weight: 700;
+              line-height: 3;
+              text-transform: uppercase;
+              text-align: start;
+              letter-spacing: 0.08em;
+              margin: 0;
+            }
+          }
+        }
       }
     }
   }
