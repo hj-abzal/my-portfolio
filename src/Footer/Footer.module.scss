@@ -1,5 +1,4 @@
 .footer {
-  // width: 100vw;
   height: 30%;
   background-color: #20232a;
   display: flex;
@@ -7,9 +6,29 @@
   justify-content: center;
   align-items: center;
   .items {
+    width: 200px;
     height: 60px;
     border: 1px solid;
     display: flex;
-    justify-self: space-between;
+    justify-content: space-between;
+    flex-direction: row;
+    .inst {
+      .instImg {
+        width: 50px;
+        height: 50px;
+      }
+    }
+    .linkedIn {
+      .linkedInImg {
+        width: 50px;
+        height: 50px;
+      }
+    }
+    .tele {
+      .teleImg {
+        width: 50px;
+        height: 50px;
+      }
+    }
   }
 }

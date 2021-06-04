@@ -2,12 +2,11 @@
 @import '../../Common/styles/scss/mixin.scss';
 
 .contactsBlock {
-  height: 70%;
   // width: 100vw;
   padding: 60px 0;
   background-color: $bgSecondaryColor;
   .container {
-    height: 100%;
+    height: 400px;
     width: 85%;
     border: 1px solid;
     margin: 0 auto;
@@ -16,13 +15,21 @@
     justify-content: space-between;
     flex-wrap: wrap;
     flex-direction: column;
-  }
-  .contactForm input,
-  .contactForm textarea {
-    width: 100%;
-    .submitBtn {
-      padding: 10px 20px;
-      background-color: aqua;
+    .contactForm {
+      width: 50%;
+      display: flex;
+      justify-content: center;
+      flex-direction: column;
+      .inputStyle {
+      }
+      &textarea {
+      }
+
+      .submitBtn {
+        width: 100px;
+        padding: 10px 20px;
+        background: aqua;
+      }
     }
   }
 }
