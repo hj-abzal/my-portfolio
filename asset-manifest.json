@@ -1,22 +1,25 @@
 {
   "files": {
-    "main.css": "/my-portfolio/static/css/main.867a9b4c.chunk.css",
-    "main.js": "/my-portfolio/static/js/main.480f94f1.chunk.js",
-    "main.js.map": "/my-portfolio/static/js/main.480f94f1.chunk.js.map",
-    "runtime-main.js": "/my-portfolio/static/js/runtime-main.56a42e89.js",
-    "runtime-main.js.map": "/my-portfolio/static/js/runtime-main.56a42e89.js.map",
-    "static/js/2.7ef3a015.chunk.js": "/my-portfolio/static/js/2.7ef3a015.chunk.js",
-    "static/js/2.7ef3a015.chunk.js.map": "/my-portfolio/static/js/2.7ef3a015.chunk.js.map",
-    "static/js/3.80fca74d.chunk.js": "/my-portfolio/static/js/3.80fca74d.chunk.js",
-    "static/js/3.80fca74d.chunk.js.map": "/my-portfolio/static/js/3.80fca74d.chunk.js.map",
+    "main.css": "/my-portfolio/static/css/main.7c6d963f.chunk.css",
+    "main.js": "/my-portfolio/static/js/main.2b72754c.chunk.js",
+    "main.js.map": "/my-portfolio/static/js/main.2b72754c.chunk.js.map",
+    "runtime-main.js": "/my-portfolio/static/js/runtime-main.542cd9cb.js",
+    "runtime-main.js.map": "/my-portfolio/static/js/runtime-main.542cd9cb.js.map",
+    "static/js/2.cc33fede.chunk.js": "/my-portfolio/static/js/2.cc33fede.chunk.js",
+    "static/js/2.cc33fede.chunk.js.map": "/my-portfolio/static/js/2.cc33fede.chunk.js.map",
+    "static/js/3.84d83f5e.chunk.js": "/my-portfolio/static/js/3.84d83f5e.chunk.js",
+    "static/js/3.84d83f5e.chunk.js.map": "/my-portfolio/static/js/3.84d83f5e.chunk.js.map",
     "index.html": "/my-portfolio/index.html",
-    "static/css/main.867a9b4c.chunk.css.map": "/my-portfolio/static/css/main.867a9b4c.chunk.css.map",
-    "static/js/2.7ef3a015.chunk.js.LICENSE.txt": "/my-portfolio/static/js/2.7ef3a015.chunk.js.LICENSE.txt"
+    "static/css/main.7c6d963f.chunk.css.map": "/my-portfolio/static/css/main.7c6d963f.chunk.css.map",
+    "static/js/2.cc33fede.chunk.js.LICENSE.txt": "/my-portfolio/static/js/2.cc33fede.chunk.js.LICENSE.txt",
+    "static/media/instagram.75e0546a.png": "/my-portfolio/static/media/instagram.75e0546a.png",
+    "static/media/reactimg.23a79da5.png": "/my-portfolio/static/media/reactimg.23a79da5.png",
+    "static/media/telegram.e9722f26.png": "/my-portfolio/static/media/telegram.e9722f26.png"
   },
   "entrypoints": [
-    "static/js/runtime-main.56a42e89.js",
-    "static/js/2.7ef3a015.chunk.js",
-    "static/css/main.867a9b4c.chunk.css",
-    "static/js/main.480f94f1.chunk.js"
+    "static/js/runtime-main.542cd9cb.js",
+    "static/js/2.cc33fede.chunk.js",
+    "static/css/main.7c6d963f.chunk.css",
+    "static/js/main.2b72754c.chunk.js"
   ]
 }
