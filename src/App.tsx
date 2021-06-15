@@ -1,8 +1,7 @@
 import React from 'react';
 import { AboutMe } from './AboutMe/AboutMe';
-import './App.css';
-import { Contacts } from './ContactsFooterC/Contacts/Contacts';
-import { ContactsFooter } from './ContactsFooterC/ContactsFooter';
+import style from './App.module.scss'
+import { Contacts } from './Contacts/Contacts';
 import { Footer } from './Footer/Footer';
 import { Header } from './Header/Header';
 import { HireMe } from './HireMeBlock/HireMe';
@@ -14,14 +13,15 @@ function App() {
 
 
   return (
-    <div>
+    <div className={style.app} >
       <Header />
       <Main />
       <AboutMe />
       <Skills />
       <HireMe />
       <Projects />
-      <ContactsFooter />
+      <Contacts />
+      <Footer />
 
 
     </div>

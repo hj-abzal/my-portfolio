@@ -9,32 +9,54 @@
 
   .container {
     @include container();
+    border: none;
     .smallContainer {
       display: flex;
       width: 100%;
-      height: 400px;
-      border: 1px solid red;
-      .description {
+      @media only screen and (max-width: 1288px) {
         display: flex;
         flex-direction: column;
-        justify-content: center;
-        .title {
-          font-size: 25px;
+      }
+
+      .description {
+        width: 50%;
+        display: flex;
+        flex-direction: column;
+        justify-content: start;
+
+        @media only screen and (max-width: 1297px) {
+          width: 100%;
         }
+        .header {
+          height: 40px;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          .title {
+            font-size: 25px;
+          }
+        }
+
         .descText {
-          font-size: 17px;
-          margin: 0 40px 0 0;
-          padding: 0 3px;
-          font-size: 0.94em;
-          word-break: break-word;
+          display: flex;
+          align-items: center;
+          justify-self: center;
+          vertical-align: middle;
+          &p {
+            font-size: 17px;
+            margin: 0 40px 0 0;
+            padding: 0 3px;
+            font-size: 0.94em;
+            word-break: break-word;
+          }
         }
       }
       .code {
-        width: 900px;
+        width: 100%;
         height: 400px;
         display: flex;
         .editor {
-          width: 570px;
+          width: 100%;
           height: 100%;
           background-color: #20232a;
 
@@ -46,6 +68,12 @@
             height: 40px;
             background-color: $bgPrimaryColor;
             padding-left: 10px;
+            display: flex;
+            justify-content: space-between;
+            & button {
+              width: 25%;
+              border-radius: none;
+            }
             & p {
               color: #999;
               font-size: 14px;
@@ -57,12 +85,20 @@
               margin: 0;
             }
           }
+          .codeText {
+            color: $textColor;
+            padding: 10px;
+          }
         }
         .result {
-          width: 250px;
-          border: 2px solid green;
+          width: 100%;
+          border: 0.1px solid grey;
+          border-top-right-radius: 15px;
+          border-bottom-right-radius: 15px;
           .resultHeader {
             padding-left: 10px;
+            background-color: rgb(177, 177, 177);
+            border-top-right-radius: 15px;
             .resultHeaderText {
               color: rgb(109, 109, 109);
               font-size: 14px;

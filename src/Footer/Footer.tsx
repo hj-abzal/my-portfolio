@@ -1,29 +1,48 @@
 import React from 'react';
-import { useSelector } from 'react-redux';
-import { AppStateType } from '../Redux/Store';
 import style from './Footer.module.scss';
-import insImg from '../assets/images/instagram.png'
-import telegramImg from '../assets/images/telegram.png'
-import linkedInImg from '../assets/images/linkedin.png'
 
+import { library } from '@fortawesome/fontawesome-svg-core';
+import { fab } from '@fortawesome/free-brands-svg-icons';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+
+library.add(fab);
 
 export const Footer = () => {
 
     return (
         <div className={style.footer}>
-            <h3>SUAN</h3>
-            <div className={style.items}>
-                <div className={style.inst}>
-                    <img className={style.instImg} src={`${insImg}`} alt="" />
-                </div>
-                <div className={style.linkedIn}>
-                    <img className={style.linkedInImg} src={`${linkedInImg}`} alt="" />
-                </div>
-                <div className={style.tele}>
-                    <img className={style.teleImg} src={`${telegramImg}`} alt="" />
-                </div>
+            <h3 className={style.title}>SUAN</h3>
+            <div className={style.icons}>
+                <a
+                    className={style.icon}
+                    href="https://www.instagram.com/hj_abzal/"
+                    target="_blank"
+                >
+                    <FontAwesomeIcon icon={['fab', 'instagram']} size="2x" style={{ color: 'white' }} />
+                </a>
+                <a
+                    className={style.icon}
+                    href="https://t.me/SuanAbzal"
+                    target="_blank"
+                >
+                    <FontAwesomeIcon icon={['fab', 'telegram-plane']} size="2x" style={{ color: 'white' }} />
+                </a>
+                <a
+                    className={style.icon}
+                    href="https://www.linkedin.com/in/abzal-suan/"
+                    target="_blank"
+                >
+                    <FontAwesomeIcon icon={['fab', 'linkedin-in']} size="2x" style={{ color: 'white' }} />
+                </a>
+                <a
+                    className={style.icon}
+                    href="https://github.com/Hyojeong-Abzal"
+                    target="_blank"
+                >
+                    <FontAwesomeIcon icon={['fab', 'github']} size="2x" style={{ color: 'white' }} />
+                </a>
             </div>
-            <p>© 2021 Copyright: Abzal Kozhakhmet</p>
+            <p className={style.reserved}>© 2021. All rights reserved</p>
         </div>
     )
 }

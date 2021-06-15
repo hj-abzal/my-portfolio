@@ -1,6 +1,5 @@
 import React from 'react';
 import style from './Projects.module.scss';
-import containerStyle from './../Common/styles/common-css-styles.module.css'
 import { Project } from './Project/Project';
 import { Title } from '../Common/components/Title/Title';
 import todoimg from './../assets/images/Без названия.png'
@@ -24,7 +23,7 @@ export const Projects = () => {
     ]
     return (
         <div className={style.projectsBlock}>
-            <div className={`${containerStyle.container} ${style.projectsContainer}`}>
+            <div className={style.projectsContainer}>
                 <Title text={"Projects"} />
                 <div className={style.projects}>
                     <Project style={todoImg} title="HTML" description={description[0]} />

@@ -1,34 +1,39 @@
+@import '../Common/styles/scss/mixin.scss';
+@import '../Common/styles/scss/variables.scss';
+
 .footer {
-  height: 30%;
-  background-color: #20232a;
+  height: 20%;
+  background-color: #090b0e;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  .items {
-    width: 200px;
-    height: 60px;
-    border: 1px solid;
+  .title {
+    color: $primaryColor;
+  }
+  .icons {
+    width: 280px;
     display: flex;
-    justify-content: space-between;
     flex-direction: row;
-    .inst {
-      .instImg {
-        width: 50px;
-        height: 50px;
-      }
+    justify-content: space-between;
+  }
+  div .icon {
+    margin-top: 10px;
+    height: 50px;
+    width: 50px;
+    color: black;
+    transition: 0.5s all;
+    &:hover {
+      opacity: 0.3;
+      transition: all 0.3s;
     }
-    .linkedIn {
-      .linkedInImg {
-        width: 50px;
-        height: 50px;
-      }
-    }
-    .tele {
-      .teleImg {
-        width: 50px;
-        height: 50px;
-      }
-    }
+  }
+  .reserved {
+    margin: 0;
+    font-size: 14px;
+    line-height: 2em;
+    color: $textColor;
+    font-family: 'Rambla', sans-serif;
+    margin-bottom: 20px;
   }
 }

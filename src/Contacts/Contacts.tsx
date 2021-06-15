@@ -1,8 +1,8 @@
 import React from 'react';
 import { useSelector } from 'react-redux';
-import SuperButton from '../../Common/components/c2-SuperButton/SuperButton';
-import { Title } from '../../Common/components/Title/Title';
-import { AppStateType } from '../../Redux/Store';
+import SuperButton from '../Common/components/c2-SuperButton/SuperButton';
+import { Title } from '../Common/components/Title/Title';
+import { AppStateType } from '../Redux/Store';
 import style from './Contacts.module.scss';
 
 export const Contacts = () => {
