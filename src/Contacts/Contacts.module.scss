@@ -6,7 +6,6 @@
   padding: 60px 0;
   background-color: $bgSecondaryColor;
   .container {
-    height: 400px;
     width: 85%;
     border: 1px solid;
     margin: 0 auto;
@@ -15,20 +14,65 @@
     justify-content: space-between;
     flex-wrap: wrap;
     flex-direction: column;
-    .contactForm {
+    .form {
       width: 50%;
+      height: 100%;
       display: flex;
-      justify-content: center;
       flex-direction: column;
-      .inputStyle {
+      align-items: center;
+      position: relative;
+      .inputContainer {
+        padding: 20px;
+        display: flex;
+        width: 100%;
+        justify-content: space-between;
+        flex-direction: column;
+        padding-bottom: 20px;
+        .inputElement1 {
+          width: 100%;
+          height: 40px;
+          padding: 6px 15px;
+          box-shadow: none;
+          border: none;
+          background: $bgPrimaryColor;
+          color: $textColor;
+          font-family: Heebo, sans-serif;
+          font-size: 1rem;
+          font-weight: 400;
+          outline: none;
+          box-sizing: border-box;
+          margin-bottom: 10px;
+        }
+        .inputElement2 {
+          width: 100%;
+          height: 40px;
+          padding: 6px 15px;
+          box-shadow: none;
+          border: none;
+          background: $bgPrimaryColor;
+          color: $textColor;
+          font-family: Heebo, sans-serif;
+          font-size: 1rem;
+          font-weight: 400;
+          outline: none;
+          box-sizing: border-box;
+        }
       }
-      &textarea {
-      }
-
-      .submitBtn {
-        width: 100px;
-        padding: 10px 20px;
-        background: aqua;
+      .textarea {
+        margin-bottom: 10px;
+        width: 100%;
+        resize: none;
+        box-shadow: none;
+        border: none;
+        background: $bgPrimaryColor;
+        color: $textColor;
+        height: 150px;
+        padding: 15px;
+        font-family: Heebo, sans-serif;
+        font-size: 1rem;
+        font-weight: 400;
+        outline: none;
+        box-sizing: border-box;
       }
     }
   }

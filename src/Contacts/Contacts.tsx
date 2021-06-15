@@ -1,24 +1,47 @@
 import React from 'react';
-import { useSelector } from 'react-redux';
+import { FormEvent } from 'react';
 import SuperButton from '../Common/components/c2-SuperButton/SuperButton';
 import { Title } from '../Common/components/Title/Title';
-import { AppStateType } from '../Redux/Store';
 import style from './Contacts.module.scss';
 
 export const Contacts = () => {
 
+    function sendEmail(e: FormEvent<HTMLFormElement>) {
+
+
+    }
 
     return (
         <div className={style.contactsBlock}>
             <div className={style.container}>
                 <Title text={'Contacts'} />
-                <form className={style.contactForm}  >
-                    <input className={style.inputStyle} type="text" />
-                    <input className={style.inputStyle} type="text" />
-                    <textarea />
-                    <div style={{ display: "flex", justifyContent: "center", alignItems: "center" }}>
-                        <SuperButton type={"submit"} className={style.submitBtn}> Отправить </SuperButton>
+                <form className={style.form} method={'post'} onSubmit={sendEmail}>
+                    <div className={style.inputContainer}>
+                        <input
+                            className={style.inputElement1}
+                            type={'text'}
+                            name={'name'}
+                            placeholder={'Name'}
+                        />
+                        <input
+                            className={style.inputElement2}
+                            type={'text'}
+                            name={'email'}
+                            placeholder={'Email'}
+                        />
                     </div>
+                    <textarea
+                        className={style.textarea}
+                        placeholder={'Message'}
+                        name={'message'}
+                    />
+
+                    <SuperButton >
+                        Send
+                    </SuperButton>
+                    {/* <button className={style.contactsButton} type={'submit'}>
+                        Say Hello!
+                    </button> */}
                 </form>
 
             </div>

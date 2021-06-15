@@ -37,8 +37,6 @@ export const Header = (props: HeaderPropsType) => {
                     <Nav headerData={headerData} isEnglish={inEnglish} />
                 </div>
                 <div className={style.modes}>
-                    {/* <LangSwitcher inEnglish={inEnglish} changeLang={changeLang} /> */}
-                    {/* <ThemeButton isLight={isLight} onClick={changeTheme} /> */}
                     <span>  <a href="">GitHub</a>  </span>
                 </div>
 

@@ -23,13 +23,15 @@
     width: 50px;
     color: black;
     transition: 0.5s all;
-    &:hover {
-      opacity: 0.3;
-      transition: all 0.3s;
+    .iconItself {
+      color: white;
+      &:hover {
+        color: $primaryColor;
+        transition: all 0.3s;
+      }
     }
   }
   .reserved {
-    margin: 0;
     font-size: 14px;
     line-height: 2em;
     color: $textColor;

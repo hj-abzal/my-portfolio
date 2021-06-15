@@ -13,13 +13,14 @@
 }
 
 .default:hover {
-  background-color: #3e8e41;
+  opacity: 0.5;
   box-shadow: 0 12px 16px 0 rgba(0, 0, 0, 0.24),
     0 17px 50px 0 rgba(0, 0, 0, 0.19);
+  transition: all 0.3s;
 }
 
 .default:active {
-  background-color: #3e8e41;
+  background-color: #61dafb;
   transform: translateY(4px);
 }
 
@@ -46,10 +47,10 @@
 }
 
 .red:hover {
-  background-color: #3e8e41;
+  background-color: #61dafb;
 }
 
 .red:active {
-  background-color: #3e8e41;
+  background-color: #61dafb;
   transform: translateY(4px);
 }
