@@ -29,15 +29,16 @@ export const Header = (props: HeaderPropsType) => {
     return (
         <div className={style.header}>
             <div className={style.content}>
+
                 <div className={style.logo}>
                     <img className={style.appLogo} src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a7/React-icon.svg/1280px-React-icon.svg.png" />
-                    <span className={style.title}> React </span>
+                    <span>   <a className={style.title} href="https://reactjs.org/" target="_blank">React</a>  </span>
                 </div>
                 <div className={style.nav}>
                     <Nav headerData={headerData} isEnglish={inEnglish} />
                 </div>
                 <div className={style.modes}>
-                    <span>  <a href="">GitHub</a>  </span>
+                    <span>  <a href="https://github.com/Hyojeong-Abzal" target="_blank">GitHub</a>  </span>
                 </div>
 
             </div>

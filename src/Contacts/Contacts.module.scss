@@ -7,7 +7,6 @@
   background-color: $bgSecondaryColor;
   .container {
     width: 85%;
-    border: 1px solid;
     margin: 0 auto;
     display: flex;
     align-items: center;
@@ -21,6 +20,9 @@
       flex-direction: column;
       align-items: center;
       position: relative;
+      @media screen and (max-width: 700px) {
+        width: 100%;
+      }
       .inputContainer {
         padding: 20px;
         display: flex;

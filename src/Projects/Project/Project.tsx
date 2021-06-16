@@ -1,4 +1,5 @@
-import React from 'react';
+import React, { useState } from 'react';
+import SuperButton from '../../Common/components/c2-SuperButton/SuperButton';
 import style from './Project.module.scss';
 
 type PropsType = {
@@ -8,12 +9,18 @@ type PropsType = {
     linkName?: string
 }
 export const Project = (props: PropsType) => {
+    const [editMode, setEditMode] = useState(false)
     return (
-        <div className={style.project}>
+        <div className={style.project} onMouseEnter={() => setEditMode(true)} onMouseLeave={() => setEditMode(false)}>
             <div style={props.style} className={style.img}>
-                <a href={props.linkName} target="_blank">
-                    View
-                </a>
+                {
+                    editMode && <SuperButton>
+                        <a href={""} target="_blank">
+                            View
+                        </a>
+                    </SuperButton>
+                }
+
             </div>
             <div className={style.descriptionBlock}>
                 <h3 className={style.title}>{props.title}</h3>

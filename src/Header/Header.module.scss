@@ -35,8 +35,9 @@
         color: rgb(97, 218, 251);
         margin-left: 10px;
         font-weight: 700;
-        font-size: 20px;
+        font-size: 1.5rem;
         line-height: 20px;
+        text-decoration: none;
       }
     }
 
@@ -53,7 +54,7 @@
         text-decoration: none;
         font-style: normal;
         -webkit-font-smoothing: antialiased;
-        font-size: 20px;
+        font-size: 1.5rem;
         &:hover {
           color: rgb(97, 218, 251);
           transition: all 0.3s;

@@ -6,7 +6,7 @@
   align-items: center;
   background-color: $textColor;
   padding: 60px 0;
-
+  min-height: 60%;
   .container {
     @include container();
     border: none;
@@ -22,8 +22,6 @@
         width: 50%;
         display: flex;
         flex-direction: column;
-        justify-content: start;
-
         @media only screen and (max-width: 1297px) {
           width: 100%;
         }
@@ -33,20 +31,17 @@
           justify-content: center;
           align-items: center;
           .title {
-            font-size: 25px;
+            font-size: 2rem;
           }
         }
 
         .descText {
-          display: flex;
-          align-items: center;
-          justify-self: center;
-          vertical-align: middle;
-          &p {
-            font-size: 17px;
+          flex-direction: column;
+          padding: 0 0 20px;
+          p {
             margin: 0 40px 0 0;
             padding: 0 3px;
-            font-size: 0.94em;
+            font-size: 1.2rem;
             word-break: break-word;
           }
         }
@@ -55,6 +50,10 @@
         width: 100%;
         height: 400px;
         display: flex;
+        @media only screen and (max-width: 768px) {
+          display: flex;
+          flex-direction: column;
+        }
         .editor {
           width: 100%;
           height: 100%;
@@ -62,6 +61,10 @@
 
           border-bottom-left-radius: 15px;
           border-top-left-radius: 15px;
+          @media screen and (max-width: 768px) {
+            border-top-right-radius: 15px;
+            border-bottom-right-radius: 15px;
+          }
 
           .header {
             border-top-left-radius: 15px;
@@ -70,8 +73,12 @@
             padding-left: 10px;
             display: flex;
             justify-content: space-between;
+            @media only screen and (max-width: 768px) {
+              border-top-right-radius: 15px;
+            }
             & button {
               border-radius: none;
+              height: 100%;
             }
             & p {
               color: #999;
@@ -87,6 +94,12 @@
           .codeText {
             color: $textColor;
             padding: 10px;
+            display: flex;
+            flex-direction: column;
+            font-size: 1rem;
+            @media only screen and (max-width: 532px) {
+              font-size: 0.9rem;
+            }
           }
         }
         .result {
@@ -94,10 +107,18 @@
           border: 0.1px solid grey;
           border-top-right-radius: 15px;
           border-bottom-right-radius: 15px;
+          @media only screen and (max-width: 768px) {
+            border-top-left-radius: 15px;
+            border-bottom-left-radius: 15px;
+          }
           .resultHeader {
             padding-left: 10px;
             background-color: rgb(177, 177, 177);
             border-top-right-radius: 15px;
+            @media only screen and (max-width: 768px) {
+              border-top-left-radius: 15px;
+              border-top-right-radius: 15px;
+            }
             .resultHeaderText {
               color: rgb(109, 109, 109);
               font-size: 14px;
@@ -108,6 +129,10 @@
               letter-spacing: 0.08em;
               margin: 0;
             }
+          }
+          .resultText {
+            padding: 10px;
+            font-size: 0.9rem;
           }
         }
       }

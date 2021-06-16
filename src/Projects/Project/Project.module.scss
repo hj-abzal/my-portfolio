@@ -2,24 +2,10 @@
 @import '../../Common/styles/scss/mixin.scss';
 
 .project {
-  width: 540px;
   display: flex;
   flex-direction: column;
   margin: 0 0 30px;
   background-color: $bgSecondaryColor;
-
-  @media screen and (max-width: 577px) {
-    & {
-      width: 350px;
-    }
-  }
-
-  @media screen and (max-width: 453px) {
-    & {
-      width: 289px;
-    }
-  }
-
   .img {
     height: 260px;
     background-color: rgb(38, 126, 64);
@@ -30,9 +16,10 @@
     background-position: center;
     background-repeat: no-repeat;
     position: relative;
+    :hover {
+      background-color: none;
+    }
     & a {
-      background-color: $primaryColor;
-      padding: 10px 20px;
       position: relative;
       z-index: 2;
     }
@@ -46,6 +33,7 @@
       left: 0;
       right: 0;
       opacity: 0.2;
+    
     }
   }
   .descriptionBlock {
@@ -53,18 +41,21 @@
     background-color: $bgSecondaryColor;
 
     .title {
-      @include text(1.17em, 1.2);
       margin: 0 0 5px;
       text-align: start;
+      color: $textColor;
+      font-weight: 700;
+      color: $primaryColor;
+      font-size: 1.3rem;
     }
 
     .description {
       width: 100%;
-      line-height: 1.8;
+      font-size: 1.2rem;
+      line-height: 1.75em;
       font-weight: 400;
-      font-size: 12px;
       color: $textColor;
-      text-align: start;
+      margin: 0 0 20px;
     }
   }
 }

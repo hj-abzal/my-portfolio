@@ -3,12 +3,11 @@
   margin: 0 0 30px;
   position: relative;
   color: $textColor;
-  .title h2 {
+  h2 {
     margin: 0;
-    font-size: 36px;
     font-weight: 600;
     text-transform: capitalize;
-    font-size: 36px;
+    font-size: 2rem;
     line-height: 1.2;
     letter-spacing: 2px;
   }

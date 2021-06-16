@@ -2,7 +2,7 @@
 @import '../Common/styles/scss/variables.scss';
 
 .footer {
-  height: 20%;
+  min-height: 20%;
   background-color: #090b0e;
   display: flex;
   flex-direction: column;
@@ -10,6 +10,7 @@
   align-items: center;
   .title {
     color: $primaryColor;
+    font-size: 1.8rem;
   }
   .icons {
     width: 280px;
@@ -32,7 +33,7 @@
     }
   }
   .reserved {
-    font-size: 14px;
+    font-size: 1rem;
     line-height: 2em;
     color: $textColor;
     font-family: 'Rambla', sans-serif;

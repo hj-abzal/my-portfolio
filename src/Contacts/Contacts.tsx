@@ -37,7 +37,7 @@ export const Contacts = () => {
                     />
 
                     <SuperButton >
-                        Send
+                        Send message
                     </SuperButton>
                     {/* <button className={style.contactsButton} type={'submit'}>
                         Say Hello!

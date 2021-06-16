@@ -18,28 +18,28 @@ export const Footer = () => {
                     href="https://www.instagram.com/hj_abzal/"
                     target="_blank"
                 >
-                    <FontAwesomeIcon icon={['fab', 'instagram']} size="2x" className={style.iconItself} />
+                    <FontAwesomeIcon icon={['fab', 'instagram']} size="3x" className={style.iconItself} />
                 </a>
                 <a
                     className={style.icon}
                     href="https://t.me/SuanAbzal"
                     target="_blank"
                 >
-                    <FontAwesomeIcon icon={['fab', 'telegram-plane']} size="2x" className={style.iconItself} />
+                    <FontAwesomeIcon icon={['fab', 'telegram-plane']} size="3x" className={style.iconItself} />
                 </a>
                 <a
                     className={style.icon}
                     href="https://www.linkedin.com/in/abzal-suan/"
                     target="_blank"
                 >
-                    <FontAwesomeIcon icon={['fab', 'linkedin-in']} size="2x" className={style.iconItself} />
+                    <FontAwesomeIcon icon={['fab', 'linkedin-in']} size="3x" className={style.iconItself} />
                 </a>
                 <a
                     className={style.icon}
                     href="https://github.com/Hyojeong-Abzal"
                     target="_blank"
                 >
-                    <FontAwesomeIcon icon={['fab', 'github']} size="2x" className={style.iconItself} />
+                    <FontAwesomeIcon icon={['fab', 'github']} size="3x" className={style.iconItself} />
                 </a>
             </div>
             <p className={style.reserved}>© 2021. All rights reserved</p>

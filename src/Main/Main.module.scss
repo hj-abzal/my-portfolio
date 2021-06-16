@@ -32,12 +32,13 @@
       background-color: $primaryColor;
       border-radius: 30px;
       color: $textColor;
-      font-size: 22px;
+      font-size: 1.7rem;
       display: flex;
       justify-content: center;
       flex-direction: column;
       align-items: center;
       flex-wrap: wrap;
+      text-align: center;
       @media only screen and (max-width: 500px) {
         width: 100%;
       }
@@ -47,6 +48,7 @@
         margin: 0;
         letter-spacing: 0.01em;
       }
+      
     }
     .photo {
       border-radius: 50%;
