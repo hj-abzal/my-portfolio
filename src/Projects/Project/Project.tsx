@@ -7,6 +7,7 @@ type PropsType = {
     description: string
     style?: { color: string; backgroundImage: string; }
     linkName?: string
+
 }
 export const Project = (props: PropsType) => {
     const [editMode, setEditMode] = useState(false)
@@ -15,7 +16,7 @@ export const Project = (props: PropsType) => {
             <div style={props.style} className={style.img}>
                 {
                     editMode && <SuperButton>
-                        <a href={""} target="_blank">
+                        <a href={props.linkName ? props.linkName : ""} target="_blank">
                             View
                         </a>
                     </SuperButton>

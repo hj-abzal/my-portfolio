@@ -1,10 +1,13 @@
 import React from 'react';
 import SuperButton from '../Common/components/c2-SuperButton/SuperButton';
-import { Title } from '../Common/components/Title/Title';
 import style from './AboutMe.module.scss'
+import Typewriter from 'typewriter-effect';
+
+
 type AboutMePropsType = {
 
 }
+
 export const AboutMe: React.FC<AboutMePropsType> = () => {
 
     return (
@@ -37,73 +40,62 @@ export const AboutMe: React.FC<AboutMePropsType> = () => {
                         <div className={style.editor}>
                             <div className={style.header}>
                                 <p>Editor</p>
-                                <SuperButton className={style.button}>Run</SuperButton>
                             </div>
                             <div className={style.codeText}>
-                                {/* <p>
-                                    function myWorkStyle () (
-                                    let years = 1;
-                                    console.log("Ready to consider project work and fulltime employment");
-                                    for (let days = 0; days "меньше" "365"; days++) (
-                                    console.log("Work hard!")
-                                    )
-                                    return years++;
-                                    )
-                                    myWorkStyle();
-                                </p> */}
                                 <span>
-                                    <i>&nbsp; function </i>
-                                    <span>myWorkStyle</span>
+
+                                    <i style={{ color: 'aqua' }}>&nbsp; function </i>
+                                    <span style={{ color: '#BDF078' }}>myWorkStyle</span>
                                     <span> () {"{ "}</span>
                                 </span>
                                 <span>
-                                    <i>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;let </i>
+                                    <i style={{ color: 'aqua' }}>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;let </i>
                                     years =
-                                    <span>1</span>
+                                    <span style={{ color: 'purple' }}>1</span>
                                     ;
                                 </span>
                                 <span>
-                                    <i>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;conslole</i>
-                                    <span>.log</span>
+                                    <i style={{ color: 'red' }}>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;for&nbsp; </i>
                                     (
-                                    <span>"Ready to consider project work and fulltime employment"</span>
-                                    );
-                                </span>
-                                <span>
-                                    <i>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;for </i>
-                                    (
-                                    <span>let </span>
+                                    <span style={{ color: 'aqua' }}>&nbsp;let &nbsp;</span>
                                     days =
-                                    <span>0</span>
+                                    <span style={{ color: 'purple' }}>&nbsp;0</span>
                                     ; days {"<"}
-                                    <span>365</span>
-                                    ; days
-                                    <span>++</span>
+                                    <span style={{ color: 'purple' }}>&nbsp;365</span>
+                                    ; &nbsp;days
+                                    <span style={{ color: 'red' }}>++</span>
                                     ) {"  {"}
                                 </span>
                                 <span>
                                     <span>
-                                        <i>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;conslole</i>
-                                        .log
-                                        <span>
+                                        <i style={{ color: 'aqua' }}>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;conslole</i>
+                                        <span style={{ color: '#BDF078' }}>.log</span>
+                                        <span style={{ color: 'aqua' }}>
                                             (
-                                            <span>"work hard!"</span>
+                                            <span style={{ color: 'gold' }}>"work hard!"</span>
                                             );
-                                            <span> // I am here :)</span>
+                                            <span style={{ color: 'grey' }}> &nbsp; // I am here :)</span>
                                         </span>
                                     </span>
                                 </span>
                                 <span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{"};"}</span>
                                 <span>
-                                    <span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;return </span>
+                                    <i style={{ color: 'aqua' }}>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;conslole</i>
+                                    <span style={{ color: '#BDF078' }}>.log</span>
+                                    (
+                                    <span style={{ color: 'gold' }}>"Ready to consider project work and fulltime employment"</span>
+                                    );
+                                </span>
+                                <span>
+                                    <span style={{ color: 'red' }}>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;return </span>
                                     years
-                                    <span>++</span>
+                                    <span style={{ color: 'aqua' }}>++</span>
                                     ;
 
                                 </span>
                                 <span>&nbsp;{" };"}</span>
                                 <span>
-                                    <span>&nbsp;&nbsp;myWorkStyle</span>
+                                    <span style={{ color: '#BDF078' }}>&nbsp;&nbsp;myWorkStyle</span>
                                     ();
                                 </span>
                             </div>
@@ -113,8 +105,20 @@ export const AboutMe: React.FC<AboutMePropsType> = () => {
                                 <p className={style.resultHeaderText}>Result</p>
                             </div>
                             <div className={style.resultText}>
-                                <div>Ready to consider project work and fulltime employment </div>
-                                <div> Work hard! 365</div>
+                                <span style={{ padding: "2px", backgroundColor: "GrayText", borderRadius: "30%" }}>365</span>  <span>Work hard!</span>
+                                <span>
+                                    <Typewriter onInit={tw => {
+                                        tw
+                                            .pauseFor(3000)
+                                            .changeDelay(100)
+                                            .typeString("Ready to consider project work and fulltime employment")
+                                            .deleteAll()
+                                            .typeString("Ready to consider project work and fulltime employment")
+                                            .deleteAll()
+                                            .typeString("Ready to consider project work and fulltime employment")
+                                            .start();
+                                    }} />
+                                </span>
                             </div>
                         </div>
                     </div>
@@ -129,7 +133,17 @@ export const AboutMe: React.FC<AboutMePropsType> = () => {
     )
 }
 
-
+// const TypewriterComponent = () => {
+//     return (
+//         <>
+//             <Typewriter onInit={tw => {
+//                 tw
+//                     .typeString("Ready to consider project work and fulltime employment")
+//                     .start
+//             }} />
+//         </>
+//     )
+// }
 function myWorkStyle() {
     let years = 1;
     console.log("Ready to consider project work and fulltime employment");
