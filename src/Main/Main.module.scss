@@ -7,6 +7,14 @@
   overflow-x: hidden;
   display: flex;
   padding-top: 60px;
+  .particles {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    opacity: 0.3;
+  }
   .container {
     width: 85%;
     margin: 0 auto;
@@ -48,7 +56,6 @@
         margin: 0;
         letter-spacing: 0.01em;
       }
-      
     }
     .photo {
       border-radius: 50%;

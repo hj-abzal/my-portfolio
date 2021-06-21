@@ -2,7 +2,8 @@ import React from 'react';
 import SuperButton from '../Common/components/c2-SuperButton/SuperButton';
 import style from './AboutMe.module.scss'
 import Typewriter from 'typewriter-effect';
-
+//@ts-ignore
+import Fade from 'react-reveal/Fade';
 
 type AboutMePropsType = {
 
@@ -36,92 +37,95 @@ export const AboutMe: React.FC<AboutMePropsType> = () => {
                         </div>
 
                     </div>
-                    <div className={style.code}>
-                        <div className={style.editor}>
-                            <div className={style.header}>
-                                <p>Editor</p>
-                            </div>
-                            <div className={style.codeText}>
-                                <span>
-
-                                    <i style={{ color: 'aqua' }}>&nbsp; function </i>
-                                    <span style={{ color: '#BDF078' }}>myWorkStyle</span>
-                                    <span> () {"{ "}</span>
-                                </span>
-                                <span>
-                                    <i style={{ color: 'aqua' }}>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;let </i>
-                                    years =
-                                    <span style={{ color: 'purple' }}>1</span>
-                                    ;
-                                </span>
-                                <span>
-                                    <i style={{ color: 'red' }}>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;for&nbsp; </i>
-                                    (
-                                    <span style={{ color: 'aqua' }}>&nbsp;let &nbsp;</span>
-                                    days =
-                                    <span style={{ color: 'purple' }}>&nbsp;0</span>
-                                    ; days {"<"}
-                                    <span style={{ color: 'purple' }}>&nbsp;365</span>
-                                    ; &nbsp;days
-                                    <span style={{ color: 'red' }}>++</span>
-                                    ) {"  {"}
-                                </span>
-                                <span>
+                    <Fade right>
+                        <div className={style.code}>
+                            <div className={style.editor}>
+                                <div className={style.header}>
+                                    <p>Editor</p>
+                                </div>
+                                <div className={style.codeText}>
                                     <span>
-                                        <i style={{ color: 'aqua' }}>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;conslole</i>
-                                        <span style={{ color: '#BDF078' }}>.log</span>
-                                        <span style={{ color: 'aqua' }}>
-                                            (
-                                            <span style={{ color: 'gold' }}>"work hard!"</span>
-                                            );
-                                            <span style={{ color: 'grey' }}> &nbsp; // I am here :)</span>
+
+                                        <i style={{ color: 'aqua' }}>&nbsp; function </i>
+                                        <span style={{ color: '#BDF078' }}>myWorkStyle</span>
+                                        <span> () {"{ "}</span>
+                                    </span>
+                                    <span>
+                                        <i style={{ color: 'aqua' }}>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;let </i>
+                                        years =
+                                        <span style={{ color: 'purple' }}>1</span>
+                                        ;
+                                    </span>
+                                    <span>
+                                        <i style={{ color: 'red' }}>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;for&nbsp; </i>
+                                        (
+                                        <span style={{ color: 'aqua' }}>&nbsp;let &nbsp;</span>
+                                        days =
+                                        <span style={{ color: 'purple' }}>&nbsp;0</span>
+                                        ; days {"<"}
+                                        <span style={{ color: 'purple' }}>&nbsp;365</span>
+                                        ; &nbsp;days
+                                        <span style={{ color: 'red' }}>++</span>
+                                        ) {"  {"}
+                                    </span>
+                                    <span>
+                                        <span>
+                                            <i style={{ color: 'aqua' }}>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;conslole</i>
+                                            <span style={{ color: '#BDF078' }}>.log</span>
+                                            <span style={{ color: 'aqua' }}>
+                                                (
+                                                <span style={{ color: 'gold' }}>"work hard!"</span>
+                                                );
+                                                <span style={{ color: 'grey' }}> &nbsp; // I am here :)</span>
+                                            </span>
                                         </span>
                                     </span>
-                                </span>
-                                <span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{"};"}</span>
-                                <span>
-                                    <i style={{ color: 'aqua' }}>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;conslole</i>
-                                    <span style={{ color: '#BDF078' }}>.log</span>
-                                    (
-                                    <span style={{ color: 'gold' }}>"Ready to consider project work and fulltime employment"</span>
-                                    );
-                                </span>
-                                <span>
-                                    <span style={{ color: 'red' }}>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;return </span>
-                                    years
-                                    <span style={{ color: 'aqua' }}>++</span>
-                                    ;
+                                    <span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{"};"}</span>
+                                    <span>
+                                        <i style={{ color: 'aqua' }}>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;conslole</i>
+                                        <span style={{ color: '#BDF078' }}>.log</span>
+                                        (
+                                        <span style={{ color: 'gold' }}>"Ready to consider project work and fulltime employment"</span>
+                                        );
+                                    </span>
+                                    <span>
+                                        <span style={{ color: 'red' }}>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;return </span>
+                                        years
+                                        <span style={{ color: 'aqua' }}>++</span>
+                                        ;
 
-                                </span>
-                                <span>&nbsp;{" };"}</span>
-                                <span>
-                                    <span style={{ color: '#BDF078' }}>&nbsp;&nbsp;myWorkStyle</span>
-                                    ();
-                                </span>
+                                    </span>
+                                    <span>&nbsp;{" };"}</span>
+                                    <span>
+                                        <span style={{ color: '#BDF078' }}>&nbsp;&nbsp;myWorkStyle</span>
+                                        ();
+                                    </span>
+                                </div>
+                            </div>
+                            <div className={style.result}>
+                                <div className={style.resultHeader}>
+                                    <p className={style.resultHeaderText}>Result</p>
+                                </div>
+                                <div className={style.resultText}>
+                                    <span style={{ padding: "2px", backgroundColor: "GrayText", borderRadius: "30%" }}>365</span>  <span>Work hard!</span>
+                                    <span>
+                                        <Typewriter onInit={tw => {
+                                            tw
+                                                .pauseFor(3000)
+                                                .changeDelay(100)
+                                                .typeString("Ready to consider project work and fulltime employment")
+                                                .deleteAll()
+                                                .typeString("Ready to consider project work and fulltime employment")
+                                                .deleteAll()
+                                                .typeString("Ready to consider project work and fulltime employment")
+                                                .start();
+                                        }} />
+                                    </span>
+                                </div>
                             </div>
                         </div>
-                        <div className={style.result}>
-                            <div className={style.resultHeader}>
-                                <p className={style.resultHeaderText}>Result</p>
-                            </div>
-                            <div className={style.resultText}>
-                                <span style={{ padding: "2px", backgroundColor: "GrayText", borderRadius: "30%" }}>365</span>  <span>Work hard!</span>
-                                <span>
-                                    <Typewriter onInit={tw => {
-                                        tw
-                                            .pauseFor(3000)
-                                            .changeDelay(100)
-                                            .typeString("Ready to consider project work and fulltime employment")
-                                            .deleteAll()
-                                            .typeString("Ready to consider project work and fulltime employment")
-                                            .deleteAll()
-                                            .typeString("Ready to consider project work and fulltime employment")
-                                            .start();
-                                    }} />
-                                </span>
-                            </div>
-                        </div>
-                    </div>
+                    </Fade>
+
                 </div>
 
 

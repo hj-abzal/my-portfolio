@@ -6,7 +6,8 @@ import todoimg from './../assets/images/Без названия.png'
 import socislNetworkImg from './../assets/images/socialNetwork.jpg'
 import counterIMG from './../assets/images/first.png'
 import MountainsImg from './../assets/images/second.jpg'
-
+//@ts-ignore
+import Fade from 'react-reveal/Fade';
 
 export const Projects = () => {
 
@@ -46,10 +47,14 @@ export const Projects = () => {
             <div className={style.projectsContainer}>
                 <Title text={"Projects"} />
                 <div className={style.projects}>
-                    <Project linkName={linkName[0]} style={todoImg} title="TODOLIST" description={description[0]} />
-                    <Project linkName={linkName[1]} style={socislNetwork} title="THE SOCIAL NETWORK" description={description[1]} />
-                    <Project linkName={linkName[2]} style={counterImg} title="COUNTER" description={description[2]} />
-                    <Project style={futureProjectImg} title="FUTURE PROJECT" description={description[3]} />
+                    <Fade left>
+                        <Project linkName={linkName[0]} style={todoImg} title="TODOLIST" description={description[0]} />
+                        <Project linkName={linkName[1]} style={socislNetwork} title="THE SOCIAL NETWORK" description={description[1]} />
+                    </Fade>
+                    <Fade right>
+                        <Project linkName={linkName[2]} style={counterImg} title="COUNTER" description={description[2]} />
+                        <Project style={futureProjectImg} title="FUTURE PROJECT" description={description[3]} />
+                    </Fade>
                 </div>
             </div>
         </div>

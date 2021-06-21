@@ -9,6 +9,9 @@ import { Main } from './Main/Main';
 import { Projects } from './Projects/Projects';
 import { Skills } from './Skills/Skills';
 
+
+
+
 function App() {
 
 
