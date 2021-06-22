@@ -6,7 +6,7 @@ type ActionType = ChangeAppThemeAT | ChangeAppLanguageAT
 type ChangeAppThemeAT = ReturnType<typeof ChangeAppThemeAC>
 type ChangeAppLanguageAT = ReturnType<typeof ChangeAppLanguageAC>
 
-export type DataType = typeof data 
+export type DataType = typeof data
 
 export const data = {
     header: {

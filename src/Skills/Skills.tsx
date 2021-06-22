@@ -4,6 +4,7 @@ import { Skill } from './Skill/Skill';
 import { Title } from '../Common/components/Title/Title';
 import { library } from '@fortawesome/fontawesome-svg-core';
 import { fas } from '@fortawesome/free-solid-svg-icons';
+
 //@ts-ignore
 import Fade from 'react-reveal/Fade';
 
@@ -18,16 +19,18 @@ export const Skills = () => {
     ];
 
     return (
-        <div className={style.skillsBlock}>
+        <div id="Skills" className={style.skillsBlock}>
             <div className={style.skillsContainer}>
                 <Title text={"Skills"} />
                 <div className={style.skills}>
                     <Fade left>
+
                         <Skill
                             icon={['fas', 'laptop-code']}
                             title={'DEVELOPMENT'}
                             description={description[0]}
                         />
+
                         <Skill
                             icon={['fas', 'code']}
                             title={'FOUNDATION'}
@@ -41,6 +44,7 @@ export const Skills = () => {
                             title={'TESTING'}
                             description={description[2]}
                         />
+
                         <Skill
                             icon={['fab', 'sketch']}
                             title={'DESIGN'}

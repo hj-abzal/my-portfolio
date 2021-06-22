@@ -19,7 +19,7 @@ function App() {
     <div className={style.app} >
       <Header />
       <Main />
-      <AboutMe />
+      <AboutMe  />
       <Skills />
       <HireMe />
       <Projects />

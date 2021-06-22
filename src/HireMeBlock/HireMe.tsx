@@ -9,7 +9,7 @@ type HireMePropsType = {
 export const HireMe: React.FC<HireMePropsType> = () => {
 
     return (
-        <div className={style.jobBlock}>
+        <div  className={style.jobBlock}>
             <div className={style.jobContainer}>
                 <h2 className={style.title}>I am considering remote work options</h2>
                 <div className={style.buttonsContainer}>

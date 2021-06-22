@@ -44,7 +44,7 @@ export const Projects = () => {
 
     return (
         <div className={style.projectsBlock}>
-            <div className={style.projectsContainer}>
+            <div id="Projects" className={style.projectsContainer}>
                 <Title text={"Projects"} />
                 <div className={style.projects}>
                     <Fade left>

@@ -1,9 +1,14 @@
 .nav {
-  width: 400px;
+  width: 500px;
   height: 40px;
   display: flex;
   justify-content: space-between;
   align-items: center;
+}
+@media screen and (max-width: 700px) {
+  .nav{
+    display: none;
+  }
 }
 .navList {
   width: 400px;
@@ -13,7 +18,7 @@
 
 .a {
   color: white;
-  width: 100px;
+  width: 250px;
   height: 40px;
   display: flex;
   justify-content: center;

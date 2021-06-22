@@ -12,7 +12,7 @@ type AboutMePropsType = {
 export const AboutMe: React.FC<AboutMePropsType> = () => {
 
     return (
-        <div className={style.AboutMeBlock}>
+        <div id="AboutMe" className={style.AboutMeBlock}>
             <div className={style.container}>
                 <div className={style.smallContainer}>
                     <div className={style.description}>

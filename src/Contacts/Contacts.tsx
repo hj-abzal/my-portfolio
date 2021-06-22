@@ -12,7 +12,7 @@ export const Contacts = () => {
     }
 
     return (
-        <div className={style.contactsBlock}>
+        <div id="Contacts" className={style.contactsBlock}>
             <div className={style.container}>
                 <Title text={'Contacts'} />
                 <form className={style.form} method={'post'} onSubmit={sendEmail}>

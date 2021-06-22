@@ -1,9 +1,10 @@
 import React from 'react';
 import { useDispatch, useSelector } from 'react-redux';
-import { Nav } from '../Nav/Nav';
+import { Nav } from './Nav/Nav';
 import { ChangeAppLanguageAC, ChangeAppThemeAC } from '../Redux/portfolioReducer';
 import style from './Header.module.scss';
 import { AppStateType } from '../Redux/Store';
+import { BurgerNav } from './BurgerNuv/BurgerNuv';
 
 
 type HeaderPropsType = {
@@ -11,21 +12,9 @@ type HeaderPropsType = {
 }
 
 export type HeaderDataType = {
-    inRussian: string[];
-    inEnglish: string[];
+
 }
 export const Header = (props: HeaderPropsType) => {
-    const isLight = useSelector<AppStateType, boolean>(state => state.portfolio.isLight)
-    const inEnglish = useSelector<AppStateType, boolean>(state => state.portfolio.inEnglish)
-
-    const dispatch = useDispatch();
-    const changeTheme = () => {
-        dispatch(ChangeAppThemeAC(!isLight))
-    }
-    const changeLang = () => {
-        dispatch(ChangeAppLanguageAC(!inEnglish))
-    }
-    const headerData = useSelector<AppStateType, HeaderDataType>(store => store.data.header)
     return (
         <div className={style.header}>
             <div className={style.content}>
@@ -35,7 +24,11 @@ export const Header = (props: HeaderPropsType) => {
                     <span>   <a className={style.title} href="https://reactjs.org/" target="_blank">React</a>  </span>
                 </div>
                 <div className={style.nav}>
-                    <Nav headerData={headerData} isEnglish={inEnglish} />
+                    <Nav />
+                    <div >
+                        <BurgerNav />
+                    </div>
+
                 </div>
                 <div className={style.modes}>
                     <span>  <a href="https://github.com/Hyojeong-Abzal" target="_blank">GitHub</a>  </span>
