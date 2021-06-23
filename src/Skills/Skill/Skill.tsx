@@ -16,7 +16,7 @@ type PropsType = {
 
 export const Skill = (props: PropsType) => {
     return (
-        <Tilt className="Tilt" options={{ max: 25 }} >
+        <Tilt className={style.skillWrapper} options={{ max: 25 }} >
             <div className={style.skill}>
 
                 <div className={style.icon}>
