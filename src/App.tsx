@@ -1,6 +1,7 @@
 import React from 'react';
 import { AboutMe } from './AboutMe/AboutMe';
 import style from './App.module.scss'
+import { ErrorSnackbar } from './Common/components/ErrorSnackbar/ErrorSnackbar';
 import { Contacts } from './Contacts/Contacts';
 import { Footer } from './Footer/Footer';
 import { Header } from './Header/Header';
@@ -17,6 +18,7 @@ function App() {
 
   return (
     <div className={style.app} >
+      <ErrorSnackbar />
       <Header />
       <Main />
       <AboutMe  />
@@ -25,8 +27,6 @@ function App() {
       <Projects />
       <Contacts />
       <Footer />
-
-
     </div>
   );
 }

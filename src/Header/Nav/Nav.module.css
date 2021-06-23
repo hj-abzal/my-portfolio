@@ -1,12 +1,12 @@
 .nav {
-  width: 500px;
+  width: 600px;
   height: 40px;
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
-@media screen and (max-width: 700px) {
-  .nav{
+@media screen and (max-width: 800px) {
+  .nav {
     display: none;
   }
 }

@@ -4,6 +4,7 @@ import SuperButton from '../Common/components/c2-SuperButton/SuperButton';
 import { Title } from '../Common/components/Title/Title';
 import style from './Contacts.module.scss';
 import emailjs from 'emailjs-com';
+import { setError } from '../Redux/portfolioReducer';
 
 export const Contacts = () => {
 
@@ -12,9 +13,9 @@ export const Contacts = () => {
         e.preventDefault();
         emailjs.sendForm('service_gv6v9ua', 'template_cvjdw9g', e.currentTarget, 'user_sHJSGniXOG0Y452xqfX7K')
             .then((result) => {
-                console.log(result.text);
+                alert("Message was sent");
             }, (error) => {
-                console.log(error.text);
+                setError(error.text);
             });
         e.currentTarget.reset();
     }
