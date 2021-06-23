@@ -30,14 +30,14 @@ export const Projects = () => {
 
     const description = [
         "TS, Redux, RestAPI, Thunk,Material UI, Unit Tests",
-        "TS, Redux, RestAPI, Thunk,ANT Design,     Unit Tests",
-        "My first project with React/Redux/TS.       I left It here as a memory.",
+        "TS, Redux, RestAPI, Thunk,ANT Design,  Unit Tests",
+        "TS, Redux, RestAPI, Thunk,Material UI, Unit Tests",
         "...in progress",
     ];
     const linkName = [
         "https://hyojeong-abzal.github.io/todolist/",
         "https://hyojeong-abzal.github.io/social-network/",
-        "https://hyojeong-abzal.github.io/exam-counter/",
+        "https://hyojeong-abzal.github.io/marvelHeroes/",
         "...in progress",
     ]
 
@@ -52,7 +52,7 @@ export const Projects = () => {
                         <Project linkName={linkName[1]} style={socislNetwork} title="THE SOCIAL NETWORK" description={description[1]} />
                     </Fade>
                     <Fade right>
-                        <Project linkName={linkName[2]} style={counterImg} title="COUNTER" description={description[2]} />
+                        <Project linkName={linkName[2]} style={counterImg} title="MARVEL FUN APP" description={description[2]} />
                         <Project style={futureProjectImg} title="FUTURE PROJECT" description={description[3]} />
                     </Fade>
                 </div>
