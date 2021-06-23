@@ -3,12 +3,20 @@ import { FormEvent } from 'react';
 import SuperButton from '../Common/components/c2-SuperButton/SuperButton';
 import { Title } from '../Common/components/Title/Title';
 import style from './Contacts.module.scss';
+import emailjs from 'emailjs-com';
 
 export const Contacts = () => {
 
     function sendEmail(e: FormEvent<HTMLFormElement>) {
 
-
+        e.preventDefault();
+        emailjs.sendForm('service_gv6v9ua', 'template_cvjdw9g', e.currentTarget, 'user_sHJSGniXOG0Y452xqfX7K')
+            .then((result) => {
+                console.log(result.text);
+            }, (error) => {
+                console.log(error.text);
+            });
+        e.currentTarget.reset();
     }
 
     return (
@@ -36,12 +44,9 @@ export const Contacts = () => {
                         name={'message'}
                     />
 
-                    <SuperButton >
+                    <SuperButton type={'submit'} >
                         Send message
                     </SuperButton>
-                    {/* <button className={style.contactsButton} type={'submit'}>
-                        Say Hello!
-                    </button> */}
                 </form>
 
             </div>
