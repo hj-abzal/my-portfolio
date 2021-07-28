@@ -31,7 +31,7 @@ export const Header = (props: HeaderPropsType) => {
 
                 </div>
                 <div className={style.modes}>
-                    <span>  <a href="https://github.com/Hyojeong-Abzal" target="_blank">GitHub</a>  </span>
+                    <span>  <a href="https://github.com/hj-abzal" target="_blank">GitHub</a>  </span>
                 </div>
 
             </div>
