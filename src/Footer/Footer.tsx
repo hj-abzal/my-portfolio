@@ -38,7 +38,7 @@ export const Footer = () => {
                     </a>
                     <a
                         className={style.icon}
-                        href="https://github.com/Hyojeong-Abzal"
+                        href="https://github.com/hj-abzal"
                         target="_blank"
                     >
                         <FontAwesomeIcon icon={['fab', 'github']} size="3x" className={style.iconItself} />
