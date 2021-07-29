@@ -35,9 +35,9 @@ export const Projects = () => {
         "...in progress",
     ];
     const linkName = [
-        "https://hyojeong-abzal.github.io/todolist/",
-        "https://hyojeong-abzal.github.io/social-network/",
-        "https://hyojeong-abzal.github.io/marvelHeroes/",
+        "https://hj-abzal.github.io/todolist/",
+        "https://hj-abzal.github.io/social-network/",
+        "https://hj-abzal.github.io/marvelHeroes/",
         "...in progress",
     ]
 
