@@ -1,7 +1,7 @@
 import React from 'react';
 import style from './Main.module.scss';
 import reactImg from '../assets/images/reactimg.png'
-import myPhoto from '../assets/images/myPhoto.jpeg'
+import myPhoto from '../assets/images/myPhoto.jpg'
 import Particles from 'react-particles-js';
 //@ts-ignore
 import Tilt from 'react-tilt'
@@ -45,9 +45,6 @@ export const Main = () => {
                             <p> A commited FRONT-END devoloper</p>
                         </div>
                     </Tilt>
-
-
-
                 </div>
             </Fade>
 

@@ -55,7 +55,7 @@ export const Projects = () => {
                     <Project linkName={linkName[0]} style={todoImg} title="TODOLIST" description={description[0]} />
                     <Project linkName={linkName[1]} style={socislNetwork} title="THE SOCIAL NETWORK" description={description[1]} />
                     <Project linkName={linkName[2]} style={marverlImg} title="MARVEL FUN APP" description={description[2]} />
-                    <Project linkName={linkName[4]} style={planktonicsStyle} title="PlANKTONICS MESSANGER" description={description[2]} />
+                    <Project linkName={linkName[4]} style={planktonicsStyle} title="PlANKTONICS MESSENGER" description={description[2]} />
                     <Project linkName={linkName[3]} style={futureProjectImg} title="FUTURE PROJECT" description={description[3]} />
                     <Project linkName={linkName[3]} style={futureProjectImg} title="FUTURE PROJECT" description={description[3]} />
                 </div>

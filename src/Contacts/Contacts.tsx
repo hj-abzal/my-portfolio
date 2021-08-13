@@ -5,15 +5,17 @@ import { Title } from '../Common/components/Title/Title';
 import style from './Contacts.module.scss';
 import emailjs from 'emailjs-com';
 import { setError } from '../Redux/portfolioReducer';
-
+import { useState } from 'react';
+import { IconButton } from '@material-ui/core';
+import DoneAllIcon from '@material-ui/icons/DoneAll';
 export const Contacts = () => {
-
+    const [validation, setValidation] = useState(false)
     function sendEmail(e: FormEvent<HTMLFormElement>) {
 
         e.preventDefault();
         emailjs.sendForm('service_gv6v9ua', 'template_cvjdw9g', e.currentTarget, 'user_sHJSGniXOG0Y452xqfX7K')
             .then((result) => {
-                alert("Message was sent");
+                setValidation(true)
             }, (error) => {
                 setError(error.text);
             });
@@ -44,7 +46,10 @@ export const Contacts = () => {
                         placeholder={'Message'}
                         name={'message'}
                     />
-
+                    {validation && <IconButton>
+                        <DoneAllIcon />
+                    </IconButton>
+                    }
                     <SuperButton type={'submit'} >
                         Send message
                     </SuperButton>
