@@ -1,26 +1,27 @@
 {
   "files": {
-    "main.css": "/my-portfolio/static/css/main.466c0e2a.chunk.css",
-    "main.js": "/my-portfolio/static/js/main.ee7ffa85.chunk.js",
-    "main.js.map": "/my-portfolio/static/js/main.ee7ffa85.chunk.js.map",
-    "runtime-main.js": "/my-portfolio/static/js/runtime-main.36d42582.js",
-    "runtime-main.js.map": "/my-portfolio/static/js/runtime-main.36d42582.js.map",
-    "static/js/2.7df8983f.chunk.js": "/my-portfolio/static/js/2.7df8983f.chunk.js",
-    "static/js/2.7df8983f.chunk.js.map": "/my-portfolio/static/js/2.7df8983f.chunk.js.map",
-    "static/js/3.010c3562.chunk.js": "/my-portfolio/static/js/3.010c3562.chunk.js",
-    "static/js/3.010c3562.chunk.js.map": "/my-portfolio/static/js/3.010c3562.chunk.js.map",
+    "main.css": "/my-portfolio/static/css/main.fbdf61d3.chunk.css",
+    "main.js": "/my-portfolio/static/js/main.eea6d5b4.chunk.js",
+    "main.js.map": "/my-portfolio/static/js/main.eea6d5b4.chunk.js.map",
+    "runtime-main.js": "/my-portfolio/static/js/runtime-main.9fc2fabf.js",
+    "runtime-main.js.map": "/my-portfolio/static/js/runtime-main.9fc2fabf.js.map",
+    "static/js/2.6c242eef.chunk.js": "/my-portfolio/static/js/2.6c242eef.chunk.js",
+    "static/js/2.6c242eef.chunk.js.map": "/my-portfolio/static/js/2.6c242eef.chunk.js.map",
+    "static/js/3.f8116267.chunk.js": "/my-portfolio/static/js/3.f8116267.chunk.js",
+    "static/js/3.f8116267.chunk.js.map": "/my-portfolio/static/js/3.f8116267.chunk.js.map",
     "index.html": "/my-portfolio/index.html",
-    "static/css/main.466c0e2a.chunk.css.map": "/my-portfolio/static/css/main.466c0e2a.chunk.css.map",
-    "static/js/2.7df8983f.chunk.js.LICENSE.txt": "/my-portfolio/static/js/2.7df8983f.chunk.js.LICENSE.txt",
+    "static/css/main.fbdf61d3.chunk.css.map": "/my-portfolio/static/css/main.fbdf61d3.chunk.css.map",
+    "static/js/2.6c242eef.chunk.js.LICENSE.txt": "/my-portfolio/static/js/2.6c242eef.chunk.js.LICENSE.txt",
     "static/media/AbzalSuan.6458b58a.pdf": "/my-portfolio/static/media/AbzalSuan.6458b58a.pdf",
-    "static/media/myPhoto.1adc7c0d.jpeg": "/my-portfolio/static/media/myPhoto.1adc7c0d.jpeg",
+    "static/media/myPhoto.f10cc7ed.jpg": "/my-portfolio/static/media/myPhoto.f10cc7ed.jpg",
+    "static/media/planktonics.b6e048c5.png": "/my-portfolio/static/media/planktonics.b6e048c5.png",
     "static/media/second.afef9394.jpg": "/my-portfolio/static/media/second.afef9394.jpg",
     "static/media/socialNetwork.85a810c9.jpg": "/my-portfolio/static/media/socialNetwork.85a810c9.jpg"
   },
   "entrypoints": [
-    "static/js/runtime-main.36d42582.js",
-    "static/js/2.7df8983f.chunk.js",
-    "static/css/main.466c0e2a.chunk.css",
-    "static/js/main.ee7ffa85.chunk.js"
+    "static/js/runtime-main.9fc2fabf.js",
+    "static/js/2.6c242eef.chunk.js",
+    "static/css/main.fbdf61d3.chunk.css",
+    "static/js/main.eea6d5b4.chunk.js"
   ]
 }
