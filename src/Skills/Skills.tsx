@@ -5,8 +5,7 @@ import { Title } from '../Common/components/Title/Title';
 import { library } from '@fortawesome/fontawesome-svg-core';
 import { fas } from '@fortawesome/free-solid-svg-icons';
 
-//@ts-ignore
-import Fade from 'react-reveal/Fade';
+
 
 library.add(fas);
 export const Skills = () => {
@@ -16,6 +15,7 @@ export const Skills = () => {
         'JavaScript, TypeScript, HTML5, CSS3',
         'Unit Tests, SnapShot, Storybook',
         'Material UI, Ant-Design etc',
+        'Node.js, Express, MongoDB'
     ];
 
     return (
@@ -46,6 +46,11 @@ export const Skills = () => {
                         icon={['fab', 'sketch']}
                         title={'DESIGN'}
                         description={description[3]}
+                    />
+                    <Skill
+                        icon={['fas', 'server']}
+                        title={'BACKEND'}
+                        description={description[4]}
                     />
                 </div>
             </div>

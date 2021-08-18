@@ -1,5 +1,4 @@
 import React from 'react';
-import SuperButton from '../Common/components/c2-SuperButton/SuperButton';
 import style from './AboutMe.module.scss'
 import Typewriter from 'typewriter-effect';
 //@ts-ignore
@@ -24,15 +23,11 @@ export const AboutMe: React.FC<AboutMePropsType> = () => {
                                 results-focused attitude to creating SPA,
                                 using React(JS/TS), Redux.
                             </p>
-                            <p> I would like to find project work and fulltime employment in a company with a
-                                modern approach to development and
-                                a collaborative team.
+                            <p> I have a sufficient experience in React development
+                                from small pet projects to large architectural and testable web applications.
                             </p>
-                            <p> My free time is dedicated to Codewars,
-                                programming tutorials, and becoming
-                                familiar with NodeJS, because, in the
-                                future, I see myself as a Full Stack
-                                Developer.
+                            <p>  My most important skills are problem solving,
+                                proactivity and total contribution.
                             </p>
                         </div>
 
