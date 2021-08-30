@@ -7,7 +7,7 @@ import socislNetworkImg from './../assets/images/socialNetwork.jpg'
 import marvelIMG from './../assets/images/first.png'
 import MountainsImg from './../assets/images/second.jpg'
 import planktonicsPng from './../assets/images/planktonics.png'
-
+import map from './../assets/images/map.png'
 
 export const Projects = () => {
 
@@ -31,19 +31,25 @@ export const Projects = () => {
         color: 'blue',
         backgroundImage: `url(${planktonicsPng})`,
     };
+    const mapImg = {
+        color: 'blue',
+        backgroundImage: `url(${map})`,
+    };
 
     const description = [
-        "TS, Redux, RestAPI, Thunk,Material UI, Unit Tests",
-        "TS, Redux, RestAPI, Thunk,ANT Design,  Unit Tests",
+        "TS, Redux, RestAPI, Thunk, Material UI, Unit Tests",
+        "TS, Redux, RestAPI, Thunk, Ant-design,  Unit Tests",
         "TS, Redux, Thunk,Material UI, React-router-dom",
         "...in progress",
+        "TS, Redux, AXIOS, Thunk, Ant-design"
     ];
     const linkName = [
         "https://hj-abzal.github.io/todolist/",
         "https://hj-abzal.github.io/social-network/",
         "https://hj-abzal.github.io/marvelHeroes/",
         "https://github.com/hj-abzal",
-        "https://hj-abzal.github.io/TOT-Systems-network"
+        "https://hj-abzal.github.io/TOT-Systems-network",
+        "https://project-learning-cards.github.io/learning-cards"
     ]
 
 
@@ -56,7 +62,7 @@ export const Projects = () => {
                     <Project linkName={linkName[1]} style={socislNetwork} title="THE SOCIAL NETWORK" description={description[1]} />
                     <Project linkName={linkName[2]} style={marverlImg} title="MARVEL FUN APP" description={description[2]} />
                     <Project linkName={linkName[4]} style={planktonicsStyle} title="PlANKTONICS MESSENGER" description={description[2]} />
-                    <Project linkName={linkName[3]} style={futureProjectImg} title="FUTURE PROJECT" description={description[3]} />
+                    <Project linkName={linkName[5]} style={mapImg} title="EDUCATION CARDS (MAP)" description={description[4]} />
                     <Project linkName={linkName[3]} style={futureProjectImg} title="FUTURE PROJECT" description={description[3]} />
                 </div>
             </div>
