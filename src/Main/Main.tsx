@@ -35,9 +35,7 @@ export const Main = () => {
             <Particles className={style.particles} params={ParticlesParams} />
             <Fade top>
                 <div className={style.container}>
-                    <Tilt options={{ max: 25 }}  >
                         <img className={style.photo} src={myPhoto} />
-                    </Tilt>
                     <Tilt options={{ max: 25 }}  >
                         <div className={style.text}>
                             <span> Hi there !</span>
