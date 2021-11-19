@@ -1,6 +1,5 @@
 import React from 'react';
-import SuperButton from '../Common/components/c2-SuperButton/SuperButton';
-import { Title } from '../Common/components/Title/Title';
+import SuperButton from '../common/components/c2-SuperButton/SuperButton';
 import style from './HireMe.module.scss'
 //@ts-ignore
 import cv from '../assets/cv/AbzalSuan.pdf'

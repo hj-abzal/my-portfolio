@@ -1,7 +1,7 @@
 import React from 'react';
 import { FormEvent } from 'react';
-import SuperButton from '../Common/components/c2-SuperButton/SuperButton';
-import { Title } from '../Common/components/Title/Title';
+import SuperButton from '../common/components/c2-SuperButton/SuperButton';
+import { Title } from '../common/components/Title/Title';
 import style from './Contacts.module.scss';
 import emailjs from 'emailjs-com';
 import { setError } from '../Redux/portfolioReducer';

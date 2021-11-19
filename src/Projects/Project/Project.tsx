@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import SuperButton from '../../Common/components/c2-SuperButton/SuperButton';
+import SuperButton from '../../common/components/c2-SuperButton/SuperButton';
 import style from './Project.module.scss';
 //@ts-ignore
 import Tilt from 'react-tilt'

@@ -1,7 +1,7 @@
 import React from 'react';
 import { AboutMe } from './AboutMe/AboutMe';
 import style from './App.module.scss'
-import { ErrorSnackbar } from './Common/components/ErrorSnackbar/ErrorSnackbar';
+import { ErrorSnackbar } from './common/components/ErrorSnackbar/ErrorSnackbar';
 import { Contacts } from './Contacts/Contacts';
 import { Footer } from './Footer/Footer';
 import { Header } from './Header/Header';

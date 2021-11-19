@@ -1,7 +1,7 @@
 import React from 'react';
 import style from './Projects.module.scss';
 import { Project } from './Project/Project';
-import { Title } from '../Common/components/Title/Title';
+import { Title } from '../common/components/Title/Title';
 import todoimg from './../assets/images/Без названия.png'
 import socislNetworkImg from './../assets/images/socialNetwork.jpg'
 import marvelIMG from './../assets/images/first.png'

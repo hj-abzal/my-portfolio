@@ -1,7 +1,7 @@
 import React from 'react';
 import style from './Skills.module.scss';
 import { Skill } from './Skill/Skill';
-import { Title } from '../Common/components/Title/Title';
+import { Title } from '../common/components/Title/Title';
 import { library } from '@fortawesome/fontawesome-svg-core';
 import { fas } from '@fortawesome/free-solid-svg-icons';
 
