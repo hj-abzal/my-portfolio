@@ -1,18 +1,18 @@
 {
   "files": {
-    "main.css": "/my-portfolio/static/css/main.0c7d4396.chunk.css",
-    "main.js": "/my-portfolio/static/js/main.d0e1122f.chunk.js",
-    "main.js.map": "/my-portfolio/static/js/main.d0e1122f.chunk.js.map",
+    "main.css": "/my-portfolio/static/css/main.17e9892f.chunk.css",
+    "main.js": "/my-portfolio/static/js/main.bb32fa3f.chunk.js",
+    "main.js.map": "/my-portfolio/static/js/main.bb32fa3f.chunk.js.map",
     "runtime-main.js": "/my-portfolio/static/js/runtime-main.9fc2fabf.js",
     "runtime-main.js.map": "/my-portfolio/static/js/runtime-main.9fc2fabf.js.map",
-    "static/js/2.16f6c4a3.chunk.js": "/my-portfolio/static/js/2.16f6c4a3.chunk.js",
-    "static/js/2.16f6c4a3.chunk.js.map": "/my-portfolio/static/js/2.16f6c4a3.chunk.js.map",
+    "static/js/2.be07688e.chunk.js": "/my-portfolio/static/js/2.be07688e.chunk.js",
+    "static/js/2.be07688e.chunk.js.map": "/my-portfolio/static/js/2.be07688e.chunk.js.map",
     "static/js/3.f8116267.chunk.js": "/my-portfolio/static/js/3.f8116267.chunk.js",
     "static/js/3.f8116267.chunk.js.map": "/my-portfolio/static/js/3.f8116267.chunk.js.map",
     "index.html": "/my-portfolio/index.html",
-    "static/css/main.0c7d4396.chunk.css.map": "/my-portfolio/static/css/main.0c7d4396.chunk.css.map",
-    "static/js/2.16f6c4a3.chunk.js.LICENSE.txt": "/my-portfolio/static/js/2.16f6c4a3.chunk.js.LICENSE.txt",
-    "static/media/AbzalSuan.20691d17.pdf": "/my-portfolio/static/media/AbzalSuan.20691d17.pdf",
+    "static/css/main.17e9892f.chunk.css.map": "/my-portfolio/static/css/main.17e9892f.chunk.css.map",
+    "static/js/2.be07688e.chunk.js.LICENSE.txt": "/my-portfolio/static/js/2.be07688e.chunk.js.LICENSE.txt",
+    "static/media/AbzalSuan.56d4bad2.pdf": "/my-portfolio/static/media/AbzalSuan.56d4bad2.pdf",
     "static/media/map.293146c6.png": "/my-portfolio/static/media/map.293146c6.png",
     "static/media/myPhoto.50993d2f.jpg": "/my-portfolio/static/media/myPhoto.50993d2f.jpg",
     "static/media/planktonics.b6e048c5.png": "/my-portfolio/static/media/planktonics.b6e048c5.png",
@@ -21,8 +21,8 @@
   },
   "entrypoints": [
     "static/js/runtime-main.9fc2fabf.js",
-    "static/js/2.16f6c4a3.chunk.js",
-    "static/css/main.0c7d4396.chunk.css",
-    "static/js/main.d0e1122f.chunk.js"
+    "static/js/2.be07688e.chunk.js",
+    "static/css/main.17e9892f.chunk.css",
+    "static/js/main.bb32fa3f.chunk.js"
   ]
 }
