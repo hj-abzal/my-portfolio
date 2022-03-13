@@ -3,10 +3,7 @@ import {Nav} from './Nav/Nav';
 import style from './Header.module.scss';
 import angularLogoLarge from '../assets/images/angular-logo-large.png'
 
-type HeaderPropsType = {}
-
-export type HeaderDataType = {}
-export const Header = (props: HeaderPropsType) => {
+export const Header = () => {
     let parts = Array.from({length: 50})
 
     return (
