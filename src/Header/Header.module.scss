@@ -1,3 +1,55 @@
+$fireColor: rgb(255, 80, 0);
+$fireColorT: rgba(255, 80, 0, 0);
+$dur: 1s;
+$blur: 0.02em;
+$fireRad: 3em;
+$parts: 50;
+$partSize: 5em;
+
+.fire {
+  padding-bottom: 5px;
+  font-size: 4px;
+  filter: blur($blur);
+  -webkit-filter: blur($blur);
+  margin: 3em auto 0 auto;
+  position: relative;
+  width: 10em;
+  height: 7em;
+}
+
+.fireParticle {
+  animation: rise $dur ease-in infinite;
+  background-image: radial-gradient($fireColor 20%, $fireColorT 70%);
+  border-radius: 50%;
+  mix-blend-mode: screen;
+  opacity: 0;
+  position: absolute;
+  bottom: 0;
+  width: $partSize;
+  height: $partSize;
+  @for $p from 1 through $parts {
+    &:nth-of-type(#{$p}) {
+      animation-delay: $dur * random();
+      left: calc((100% - #{$partSize}) * #{($p - 1)/$parts});
+    }
+  }
+}
+
+@keyframes rise {
+  from {
+    opacity: 0;
+    transform: translateY(0) scale(1);
+  }
+  25% {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+    transform: translateY(-10em) scale(0);
+  }
+}
+
+
 .header {
   background-color: #20232a;
   color: #ffffff;
@@ -13,11 +65,14 @@
     justify-content: space-around;
     align-items: center;
     height: 100%;
+
     .logo {
       display: flex;
       align-items: center;
+
       .appLogo {
-        height: 5vmin;
+
+        height: 40px;
         pointer-events: none;
         @media (prefers-reduced-motion: no-preference) {
           animation: App-logo-spin infinite 20s linear;
@@ -31,6 +86,7 @@
           }
         }
       }
+
       .title {
         color: rgb(97, 218, 251);
         margin-left: 10px;
@@ -40,36 +96,24 @@
         text-decoration: none;
       }
     }
-    
-    .modes {
+
+    .modesInner {
       display: flex;
+      justify-content: center;
       align-items: center;
-      a {
-        color: white;
-        width: 100px;
+      cursor: pointer;
+
+      img {
+        width: 150px;
         height: 40px;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        text-decoration: none;
-        font-style: normal;
-        -webkit-font-smoothing: antialiased;
-        font-size: 1.5rem;
-        &:hover {
-          color: rgb(97, 218, 251);
-          transition: all 0.3s;
-        }
       }
-      @media screen  and (max-width: 700px) {
-          display: none;
+
     }
-      
-    }
-    @media screen  and (max-width: 700px) {
+
+    @media screen and (max-width: 700px) {
+      padding: 0 1rem 0 1rem;
       display: flex;
       justify-content: space-between;
-}
-    
+    }
   }
-
 }

@@ -1,6 +1,5 @@
 import React from 'react';
 import style from './Main.module.scss';
-import reactImg from '../assets/images/reactimg.png'
 import myPhoto from '../assets/images/myPhoto.jpg'
 import Particles from 'react-particles-js';
 //@ts-ignore
@@ -29,18 +28,17 @@ const ParticlesParams = {
 }
 
 export const Main = () => {
-
     return (
         <div id="Main" className={style.mainBlock}>
-            <Particles className={style.particles} params={ParticlesParams} />
+            <Particles className={style.particles} params={ParticlesParams}/>
             <Fade top>
                 <div className={style.container}>
-                        <img className={style.photo} src={myPhoto} />
-                    <Tilt options={{ max: 25 }}  >
+                    <img className={style.photo} src={myPhoto}/>
+                    <Tilt options={{max: 25}}>
                         <div className={style.text}>
-                            <span> Hi there !</span>
+                            <p> Hi there !</p>
                             <h1 className={style.name}> I'm Abzal Suan</h1>
-                            <p> A commited FRONT-END devoloper</p>
+                            <p> A committed FRONT-END developer</p>
                         </div>
                     </Tilt>
                 </div>

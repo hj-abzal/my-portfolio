@@ -1,12 +1,15 @@
-@import '../Common/styles/scss/mixin.scss';
-@import '../Common/styles/scss/variables.scss';
+@import "./src/common/styles/scss/mixin";
+@import "./src/common/styles/scss/variables";
 
+
+////////////////////
 .mainBlock {
   min-height: 100%;
   background-color: $bgPrimaryColor;
   overflow-x: hidden;
   display: flex;
   padding-top: 60px;
+
   .particles {
     position: absolute;
     top: 0;
@@ -48,17 +51,22 @@
       color: $textColor;
       font-size: 1.7rem;
       display: flex;
-      justify-content: center;
+      justify-content: space-around;
       flex-direction: column;
       align-items: center;
       flex-wrap: wrap;
       text-align: center;
 
       .name {
+        padding: 15px;
         color: $bgPrimaryColor;
         font-size: 40px;
         margin: 0;
         letter-spacing: 0.01em;
+      }
+
+      p {
+        margin: 0;
       }
     }
 

@@ -1,5 +1,4 @@
-import React, { useState } from 'react';
-import { HeaderDataType } from '../Header';
+import React, {useState} from 'react';
 import style from './BurgerNuv.module.scss';
 import MenuIcon from '@material-ui/icons/Menu';
 
@@ -20,8 +19,8 @@ export const BurgerNav = (props: NavPropsType) => {
                         <a className={style.a} href="#Projects">Projects</a>
                     </div>
                 }
-                <div className={style.Btn} onClick={() => setEditMode(!editMode)}>
-                    <MenuIcon />
+                <div onClick={() => setEditMode(!editMode)}>
+                    <MenuIcon/>
                 </div>
             </div>
         </div>

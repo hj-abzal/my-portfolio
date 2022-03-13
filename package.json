@@ -33,7 +33,7 @@
     "typewriter-effect": "^2.18.0",
     "web-vitals": "^1.0.1"
   },
-  "homepage": "https:///Hyojeong-Abzal.gitgub.io/my-portfolio",
+  "homepage": "https:///hj-abzal.gitgub.io/my-portfolio",
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",

@@ -1,5 +1,6 @@
-@import '../Common/styles/scss/variables.scss';
-@import '../Common/styles/scss/mixin.scss';
+@import "./src/common/styles/scss/mixin";
+@import "./src/common/styles/scss/variables";
+
 .projectsBlock {
   padding: 60px 0;
   background-color: $bgPrimaryColor;
