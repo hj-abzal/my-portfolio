@@ -1,5 +1,4 @@
 import React from 'react';
-import { HeaderDataType } from '../Header';
 import style from './Nav.module.css';
 
 
