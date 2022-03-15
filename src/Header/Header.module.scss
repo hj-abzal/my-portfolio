@@ -7,14 +7,18 @@ $parts: 50;
 $partSize: 5em;
 
 .fire {
-  padding-bottom: 5px;
-  font-size: 4px;
-  filter: blur($blur);
-  -webkit-filter: blur($blur);
-  margin: 3em auto 0 auto;
-  position: relative;
   width: 10em;
   height: 7em;
+  position: relative;
+  padding-bottom: 5px;
+  font-size: 5px;
+  filter: blur(0.02em);
+  -webkit-filter: blur(0.02em);
+  margin: 3em auto 0 auto;
+  transform: rotate(223deg);
+  top: 7px;
+  left: -65px;
+
 }
 
 .fireParticle {
@@ -103,11 +107,15 @@ $partSize: 5em;
       align-items: center;
       cursor: pointer;
 
-      img {
+      .angularLogo {
         width: 150px;
         height: 40px;
       }
 
+      .rocket {
+        width: 60px;
+        height: 60px;
+      }
     }
 
     @media screen and (max-width: 700px) {

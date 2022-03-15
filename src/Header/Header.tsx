@@ -2,6 +2,7 @@ import React from 'react';
 import {Nav} from './Nav/Nav';
 import style from './Header.module.scss';
 import angularLogoLarge from '../assets/images/angular-logo-large.png'
+import rocket from '../assets/images/rocket.png'
 
 export const Header = () => {
     let parts = Array.from({length: 50})
@@ -21,7 +22,8 @@ export const Header = () => {
 
                 <div className={style.modes} onClick={() => window.open("https://angular.io", "_blank")}>
                     <div className={style.modesInner}>
-                        <img src={angularLogoLarge} alt=""/>
+                        <img src={angularLogoLarge} className={style.angularLogo} alt=""/>
+                        <img src={rocket} className={style.rocket} alt=""/>
                         <div className={style.fire}>
                             {parts.map((el, i) => <div key={i} className={style.fireParticle}></div>)}
                         </div>
