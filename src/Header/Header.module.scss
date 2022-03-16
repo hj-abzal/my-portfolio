@@ -106,10 +106,23 @@ $partSize: 5em;
       justify-content: center;
       align-items: center;
       cursor: pointer;
+      position: relative;
+      right: -61px;
 
-      .angularLogo {
+      .angularLogoLarge {
         width: 150px;
         height: 40px;
+        @media screen and (max-width: 500px) {
+          display: none;
+        }
+      }
+
+      .angularLogo {
+        width: 40px;
+        height: 40px;
+        @media screen and (min-width: 500px) {
+          display: none;
+        }
       }
 
       .rocket {

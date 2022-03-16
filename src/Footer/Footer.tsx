@@ -1,11 +1,12 @@
 import React from 'react';
 import style from './Footer.module.scss';
 
-import { library } from '@fortawesome/fontawesome-svg-core';
-import { fab } from '@fortawesome/free-brands-svg-icons';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import {library} from '@fortawesome/fontawesome-svg-core';
+import {fab} from '@fortawesome/free-brands-svg-icons';
+import {FontAwesomeIcon} from '@fortawesome/react-fontawesome';
 //@ts-ignore
 import Fade from 'react-reveal/Fade';
+
 library.add(fab);
 
 export const Footer = () => {
@@ -34,17 +35,17 @@ export const Footer = () => {
                         href="https://www.linkedin.com/in/abzal-suan/"
                         target="_blank"
                     >
-                        <FontAwesomeIcon icon={['fab', 'linkedin-in']} size="3x" className={style.iconItself} />
+                        <FontAwesomeIcon icon={['fab', 'linkedin-in']} size="3x" className={style.iconItself}/>
                     </a>
                     <a
                         className={style.icon}
                         href="https://github.com/hj-abzal"
                         target="_blank"
                     >
-                        <FontAwesomeIcon icon={['fab', 'github']} size="3x" className={style.iconItself} />
+                        <FontAwesomeIcon icon={['fab', 'github']} size="3x" className={style.iconItself}/>
                     </a>
                 </div>
-                <p className={style.reserved}>© 2021. All rights reserved</p>
+                <p className={style.reserved}>© {new Date().getFullYear()}. All rights reserved</p>
             </Fade>
         </div>
     )

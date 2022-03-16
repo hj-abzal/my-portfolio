@@ -7,9 +7,14 @@
   background-color: $textColor;
   padding: 60px 0;
   min-height: 60%;
+  @media only screen and (max-width: 780px) {
+    height: 1000px;
+  }
+
   .container {
     @include container();
     border: none;
+
     .smallContainer {
       display: flex;
       width: 100%;
@@ -39,8 +44,9 @@
         .descText {
           flex-direction: column;
           padding: 0 0 20px;
+
           p {
-            margin: 0 40px 0 0;
+            margin: 0 40px 1rem 0;
             padding: 0 3px;
             font-size: 1.2rem;
             word-break: break-word;
@@ -78,7 +84,7 @@
               border-top-right-radius: 15px;
             }
             & button {
-              border-radius: none;
+              border-radius: 0;
               height: 100%;
             }
             & p {
@@ -109,9 +115,13 @@
           border-top-right-radius: 15px;
           border-bottom-right-radius: 15px;
           @media only screen and (max-width: 768px) {
+            margin-top: 1rem;
+          }
+          @media only screen and (max-width: 768px) {
             border-top-left-radius: 15px;
             border-bottom-left-radius: 15px;
           }
+
           .resultHeader {
             padding-left: 10px;
             background-color: rgb(177, 177, 177);
@@ -129,15 +139,27 @@
               text-align: start;
               letter-spacing: 0.08em;
               margin: 0;
+              height: 40px;
             }
           }
           .resultText {
             padding: 10px;
             font-size: 1.1rem;
-           
+
+            .tagWrapper {
+              padding-bottom: 5px;
+
+              .tag {
+                padding: 2px;
+                background-color: rgb(177, 177, 177);
+                color: rgb(109, 109, 109);
+                border-radius: 30%;
+              }
+            }
           }
         }
       }
     }
   }
 }
+

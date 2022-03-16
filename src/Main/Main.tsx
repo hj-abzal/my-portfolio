@@ -36,9 +36,11 @@ export const Main = () => {
                     <img className={style.photo} src={myPhoto}/>
                     <Tilt options={{max: 25}}>
                         <div className={style.text}>
-                            <p> Hi there !</p>
-                            <h1 className={style.name}> I'm Abzal Suan</h1>
-                            <p> A committed FRONT-END developer</p>
+                            <div className={style.textInner}>
+                                <p> Hi there !</p>
+                                <h1 className={style.name}> I'm Abzal Suan</h1>
+                                <p> A committed FRONT-END developer</p>
+                            </div>
                         </div>
                     </Tilt>
                 </div>
