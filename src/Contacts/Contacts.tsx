@@ -47,6 +47,8 @@ export const Contacts = () => {
         },
     });
     const error = formik.errors.name || formik.errors.email || formik.errors.message
+
+
     return (
         <div id="Contacts" className={style.contactsBlock}>
             <div className={style.container}>
@@ -78,7 +80,7 @@ export const Contacts = () => {
                         placeholder={'Message'}
                     />
                     <SuperButton type={'submit'} disabled={!!error || isLoading}>
-                        {error ? error : 'Send message'}
+                        {error ? error : isLoading ? "sending..." : 'Send message'}
                     </SuperButton>
                 </form>
 
