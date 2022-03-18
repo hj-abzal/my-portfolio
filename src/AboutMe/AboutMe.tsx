@@ -24,54 +24,54 @@ export const AboutMe = () => {
                         </div>
 
                     </div>
-                        <div className={style.code}>
-                            <div className={style.editor}>
-                                <div className={style.header}>
-                                    <p>Editor</p>
-                                </div>
-                                <div className={style.codeText}>
+                    <div className={style.code}>
+                        <div className={style.editor}>
+                            <div className={style.header}>
+                                <p>Editor</p>
+                            </div>
+                            <div className={style.codeText}>
                                     <span>
 
                                         <i style={{color: 'aqua'}}>&nbsp; function </i>
                                         <span style={{color: '#BDF078'}}>logInfo</span>
                                         <span> () {"{ "}</span>
                                     </span>
-                                    <span>
+                                <span>
                                         <i style={{
                                             color: 'aqua',
                                             paddingLeft: '30px',
                                         }}>const </i>
                                         person = {"{ "}
                                     </span>
-                                    <span>
+                                <span>
                                         <span style={{color: 'aqua', paddingLeft: '70px'}}>name:</span>&nbsp;"Abzal"
                                     </span>
-                                    <span>
+                                <span>
                                         <span style={{
                                             color: 'aqua',
                                             paddingLeft: '70px'
                                         }}>country:</span>&nbsp;"Kazakhstan"
                                     </span>
-                                    <span>
+                                <span>
                                         <span style={{
                                             color: 'aqua',
                                             paddingLeft: '70px'
                                         }}>workExperienceYear:</span>&nbsp;1
                                     </span>
-                                    <span>
+                                <span>
                                         <span style={{
                                             color: 'aqua',
                                             paddingLeft: '70px'
                                         }}>desiredStack:</span>&nbsp;"MEAN/MERN"
                                     </span>
-                                    <span>
+                                <span>
                                         <span style={{
                                             color: 'aqua',
                                             paddingLeft: '70px'
-                                        }}>desiredSalary:</span>&nbsp;"1500$"
+                                        }}>desiredSalary:</span>&nbsp;"2K$"
                                     </span>
-                                    <span style={{paddingLeft: '30px'}}>{"};"}</span>
-                                    <span>
+                                <span style={{paddingLeft: '30px'}}>{"};"}</span>
+                                <span>
                                         <i style={{
                                             color: 'red',
                                             paddingLeft: '30px'
@@ -81,59 +81,49 @@ export const AboutMe = () => {
                                         days =
                                         <span style={{color: 'aqua'}}>&nbsp;0</span>
                                         ; days {"<"}
-                                        <span style={{color: 'aqua'}}>&nbsp;365</span>
+                                    <span style={{color: 'aqua'}}>&nbsp;365</span>
                                         ; &nbsp;days
                                         <span style={{color: 'red'}}>++</span>
                                         ) {"  {"}
                                     </span>
-                                    <span>
-                                        <span>
-                                            <i style={{
-                                                color: 'aqua',
-                                                paddingLeft: '60px'
-                                            }}>console</i>
-                                            <span style={{color: '#BDF078'}}>.log</span>
-                                            <span style={{color: 'aqua'}}>
-                                                (
-                                                <span style={{color: 'gold'}}>"work hard!"</span>
-                                                );
-                                                <span style={{color: 'grey'}}> &nbsp; // I am here :)</span>
-                                            </span>
-                                            <div style={{color: 'aqua', paddingLeft: '30px'}}>{" };"}</div>
-                                        </span>
-                                    </span>
-                                    <span>
+                                <span>
+                                        <ConsloeLog word={'Sleep!'} comment={'//I am here :)'}/>
+                                        <ConsloeLog word={'Eat!'}/>
+                                        <ConsloeLog word={'Code!'}/>
+                                    <div style={{color: 'aqua', paddingLeft: '30px'}}>{" };"}</div>
+                                </span>
+                                <span>
                                         <i style={{color: 'aqua', paddingLeft: '30px'}}>console</i>
                                         <span style={{color: '#BDF078'}}>.log</span>
                                         (
                                         <span style={{color: 'gold'}}>"{logText}"</span>
                                         );
                                     </span>
-                                    <span style={{paddingLeft: '30px'}}> person.<span
-                                        style={{color: '#BDF078'}}>workExperienceYear</span> = <span>2</span>;</span>
-                                    <span>&nbsp;{" };"}</span>
-                                    <span>
+                                <span style={{paddingLeft: '30px'}}> person.<span
+                                    style={{color: '#BDF078'}}>workExperienceYear</span> = <span>2</span>;</span>
+                                <span>&nbsp;{" };"}</span>
+                                <span>
                                         <span style={{color: '#BDF078'}}>&nbsp;&nbsp;logInfo</span>
                                         ();
                                     </span>
-                                </div>
                             </div>
-                            <div className={style.result}>
-                                <div className={style.resultHeader}>
-                                    <p className={style.resultHeaderText}>Result</p>
+                        </div>
+                        <div className={style.result}>
+                            <div className={style.resultHeader}>
+                                <p className={style.resultHeaderText}>Result</p>
+                            </div>
+                            <div className={style.resultText}>
+                                <div className={style.tagWrapper}>
+                                    <span className={style.tag}>365</span>&nbsp; Code!
                                 </div>
-                                <div className={style.resultText}>
-                                    <div className={style.tagWrapper}>
-                                        <span className={style.tag}>365</span>&nbsp; Code!
-                                    </div>
-                                    <div className={style.tagWrapper}>
-                                        <span className={style.tag}>365</span>&nbsp; Eat!
-                                    </div>
-                                    <div className={style.tagWrapper}>
-                                        <span className={style.tag}>365</span>&nbsp; Sleep!
-                                    </div>
+                                <div className={style.tagWrapper}>
+                                    <span className={style.tag}>365</span>&nbsp; Eat!
+                                </div>
+                                <div className={style.tagWrapper}>
+                                    <span className={style.tag}>365</span>&nbsp; Sleep!
+                                </div>
 
-                                    <span className={style.finalText}>
+                                <span className={style.finalText}>
                                         <Typewriter onInit={tw => {
                                             tw
                                                 .pauseFor(3000)
@@ -144,11 +134,11 @@ export const AboutMe = () => {
                                                 .deleteAll()
                                                 .typeString(logText)
                                                 .start();
-                                        }} />
+                                        }}/>
                                     </span>
-                                </div>
                             </div>
                         </div>
+                    </div>
                 </div>
             </div>
         </div>
@@ -175,3 +165,19 @@ function logInfo() {
 }
 
 logInfo();
+
+const ConsloeLog = (props: { word: string, comment?: string }) => {
+    return <div>
+        <i style={{
+            color: 'aqua',
+            paddingLeft: '40px'
+        }}>console</i>
+        <span style={{color: '#BDF078'}}>.log</span>
+        <span style={{color: 'aqua'}}>
+            (
+         <span style={{color: 'gold'}}>{props.word}</span>
+            );
+            <span style={{color: 'grey'}}> &nbsp; {props.comment}</span>
+        </span>
+    </div>
+}
