@@ -1,57 +1,84 @@
 import React from 'react';
-import { FormEvent } from 'react';
 import SuperButton from '../common/components/c2-SuperButton/SuperButton';
-import { Title } from '../common/components/Title/Title';
+import {Title} from '../common/components/Title/Title';
 import style from './Contacts.module.scss';
 import emailjs from 'emailjs-com';
-import { setError } from '../Redux/portfolioReducer';
-import { useState } from 'react';
-import { IconButton } from '@material-ui/core';
-import DoneAllIcon from '@material-ui/icons/DoneAll';
+import {setError} from '../Redux/portfolioReducer';
+import {useFormik} from "formik";
+
 export const Contacts = () => {
-    const [validation, setValidation] = useState(false)
-    function sendEmail(e: FormEvent<HTMLFormElement>) {
+    const formik = useFormik({
+        validate: (values) => {
+            if (!values.email) {
+                return {
+                    email: 'Email is required'
+                }
+            }
+            if (!values.name) {
+                return {
+                    name: 'Name is required'
+                }
+            }
 
-        e.preventDefault();
-        emailjs.sendForm('service_gv6v9ua', 'template_cvjdw9g', e.currentTarget, 'user_sHJSGniXOG0Y452xqfX7K')
-            .then((result) => {
-                setValidation(true)
-            }, (error) => {
-                setError(error.text);
-            });
-        e.currentTarget.reset();
-    }
-
+        },
+        initialValues: {
+            name: '',
+            email: '',
+            message: '',
+        },
+        onSubmit: (values, {resetForm}) => {
+            const message = `message: ${values.name}, ${values.email}, ${values.message}`
+            emailjs.send(
+                'service_yd59m0d',
+                'template_cvjdw9g',
+                {message},
+                'user_sHJSGniXOG0Y452xqfX7K')
+                .then((result) => {
+                    console.log(result)
+                    resetForm({
+                        values: {
+                            name: `Dear ${values.name}`, email: 'from heart', message: 'thank you!♥'
+                        }
+                    })
+                }, (error) => {
+                    console.log(error)
+                    setError(error.text);
+                });
+        },
+    });
+    const error = formik.errors.name || formik.errors.email || formik.errors.message
     return (
         <div id="Contacts" className={style.contactsBlock}>
             <div className={style.container}>
-                <Title text={'Contacts'} />
-                <form className={style.form} method={'post'} onSubmit={sendEmail}>
+                <Title text={'Contacts'}/>
+                <form className={style.form} onSubmit={formik.handleSubmit}>
                     <div className={style.inputContainer}>
                         <input
                             className={style.inputElement1}
-                            type={'text'}
-                            name={'name'}
+                            name="name"
+                            type="text"
+                            onChange={formik.handleChange}
+                            value={formik.values.name}
                             placeholder={'Name'}
                         />
                         <input
                             className={style.inputElement2}
-                            type={'text'}
-                            name={'email'}
+                            name="email"
+                            type="text"
+                            onChange={formik.handleChange}
+                            value={formik.values.email}
                             placeholder={'Email'}
                         />
                     </div>
                     <textarea
                         className={style.textarea}
+                        name="message"
+                        onChange={formik.handleChange}
+                        value={formik.values.message}
                         placeholder={'Message'}
-                        name={'message'}
                     />
-                    {validation && <IconButton>
-                        <DoneAllIcon />
-                    </IconButton>
-                    }
-                    <SuperButton type={'submit'} >
-                        Send message
+                    <SuperButton type={'submit'} disabled={!!error}>
+                        {error ? error : 'Send message'}
                     </SuperButton>
                 </form>
 

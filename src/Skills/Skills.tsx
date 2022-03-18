@@ -54,7 +54,7 @@ export const Skills = () => {
                     />
                     <Skill
                         icon={['fas', 'database']}
-                        title={'Database'}
+                        title={'DATABASE'}
                         description={description.database}
                     />
                 </div>
