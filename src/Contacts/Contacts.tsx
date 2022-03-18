@@ -1,4 +1,4 @@
-import React from 'react';
+import React, {useState} from 'react';
 import SuperButton from '../common/components/c2-SuperButton/SuperButton';
 import {Title} from '../common/components/Title/Title';
 import style from './Contacts.module.scss';
@@ -7,6 +7,7 @@ import {setError} from '../Redux/portfolioReducer';
 import {useFormik} from "formik";
 
 export const Contacts = () => {
+    const [isLoading, setIsLoading] = useState(false);
     const formik = useFormik({
         validate: (values) => {
             if (!values.email) {
@@ -28,22 +29,21 @@ export const Contacts = () => {
         },
         onSubmit: (values, {resetForm}) => {
             const message = `message: ${values.name}, ${values.email}, ${values.message}`
+            setIsLoading(true)
             emailjs.send(
                 'service_yd59m0d',
                 'template_cvjdw9g',
                 {message},
                 'user_sHJSGniXOG0Y452xqfX7K')
                 .then((result) => {
-                    console.log(result)
                     resetForm({
                         values: {
                             name: `Dear ${values.name}`, email: 'from heart', message: 'thank you!♥'
                         }
                     })
                 }, (error) => {
-                    console.log(error)
                     setError(error.text);
-                });
+                }).finally(() => setIsLoading(false));
         },
     });
     const error = formik.errors.name || formik.errors.email || formik.errors.message
@@ -77,7 +77,7 @@ export const Contacts = () => {
                         value={formik.values.message}
                         placeholder={'Message'}
                     />
-                    <SuperButton type={'submit'} disabled={!!error}>
+                    <SuperButton type={'submit'} disabled={!!error || isLoading}>
                         {error ? error : 'Send message'}
                     </SuperButton>
                 </form>
