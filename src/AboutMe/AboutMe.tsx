@@ -87,9 +87,9 @@ export const AboutMe = () => {
                                         ) {"  {"}
                                     </span>
                                 <span>
-                                        <ConsloeLog word={'Sleep!'} comment={'//I am here :)'}/>
+                                        <ConsloeLog word={'Sleep!'}/>
+                                        <ConsloeLog word={'Code!'} comment={'//I am here :)'}/>
                                         <ConsloeLog word={'Eat!'}/>
-                                        <ConsloeLog word={'Code!'}/>
                                     <div style={{color: 'aqua', paddingLeft: '30px'}}>{" };"}</div>
                                 </span>
                                 <span>
@@ -114,13 +114,13 @@ export const AboutMe = () => {
                             </div>
                             <div className={style.resultText}>
                                 <div className={style.tagWrapper}>
+                                    <span className={style.tag}>365</span>&nbsp; Sleep!
+                                </div>
+                                <div className={style.tagWrapper}>
                                     <span className={style.tag}>365</span>&nbsp; Code!
                                 </div>
                                 <div className={style.tagWrapper}>
                                     <span className={style.tag}>365</span>&nbsp; Eat!
-                                </div>
-                                <div className={style.tagWrapper}>
-                                    <span className={style.tag}>365</span>&nbsp; Sleep!
                                 </div>
 
                                 <span className={style.finalText}>
