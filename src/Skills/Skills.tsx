@@ -10,10 +10,10 @@ library.add(fas);
 export const Skills = () => {
 
     const description = {
-        frontend: 'React(redux), Angular(Ngrx)',
+        frontend: 'React(Redux), Angular(NgRx)',
         foundation: 'JavaScript, TypeScript, HTML5, CSS3, Git',
         testing: 'Unit Tests, SnapShot, Storybook',
-        ui: 'Material UI, Ant-Design etc, Angular Material',
+        ui: 'Material UI, Ant-Design, Angular Material etc.',
         backend: 'Node.js, Express, NestJS, Docker',
         database: 'Postgresql, MongoDB'
     };
