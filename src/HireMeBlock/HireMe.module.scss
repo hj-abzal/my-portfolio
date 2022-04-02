@@ -2,16 +2,18 @@
 @import "./src/common/styles/scss/variables";
 
 .jobBlock {
-  background-color: #333a47;
+  background-color: $bgSecondaryColor;
   height: 60%;
   display: flex;
   justify-content: center;
   align-items: center;
+
   .jobContainer {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
+
     .title {
       text-align: center;
       color: $textColor;

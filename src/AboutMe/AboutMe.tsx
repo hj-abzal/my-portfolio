@@ -6,7 +6,7 @@ export const AboutMe = () => {
     const logText = "Ready to consider project work and full-time employment";
 
     return (
-        <div id="AboutMe" className={style.AboutMeBlock}>
+        <div id="Main" className={style.AboutMeBlock}>
             <div className={style.container}>
                 <div className={style.smallContainer}>
                     <div className={style.description}>
@@ -14,13 +14,17 @@ export const AboutMe = () => {
                             <h3 className={style.title}>About me</h3>
                         </div>
                         <div className={style.descText}>
-                            <p> I’m a front-end developer who has a results-focused attitude to creating SPA, using most
-                                popular frameworks as React, Vue and Angular.
+                            <p>
+                                I’m a front-end developer who has a results-focused attitude to creating SPA, using the
+                                most popular frameworks like React, Vue, and Angular.
                             </p>
-                            <p> I have a sufficient experience in Frontend development from small pet projects to large
+                            <p>
+                                I have sufficient experience in Frontend development from small pet projects to large
                                 architectural and testable web applications.
                             </p>
-                            <p> My most important skills are problem solving, proactivity and total contribution.</p>
+                            <p>
+                                My most important skills are problem-solving, proactivity, and total contribution.
+                            </p>
                         </div>
 
                     </div>
