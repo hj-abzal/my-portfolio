@@ -60,19 +60,13 @@ export const AboutMe = () => {
                                         <span style={{
                                             color: 'aqua',
                                             paddingLeft: '70px'
-                                        }}>workExperienceYear:</span>&nbsp;1
+                                        }}>workExperienceYear:</span>&nbsp;"1+"
                                     </span>
                                 <span>
                                         <span style={{
                                             color: 'aqua',
                                             paddingLeft: '70px'
                                         }}>desiredStack:</span>&nbsp;"MEAN/MERN"
-                                    </span>
-                                <span>
-                                        <span style={{
-                                            color: 'aqua',
-                                            paddingLeft: '70px'
-                                        }}>desiredSalary:</span>&nbsp;"2K$"
                                     </span>
                                 <span style={{paddingLeft: '30px'}}>{"};"}</span>
                                 <span>
@@ -91,9 +85,7 @@ export const AboutMe = () => {
                                         ) {"  {"}
                                     </span>
                                 <span>
-                                        <ConsloeLog word={'Sleep!'}/>
-                                        <ConsloeLog word={'Code!'} comment={'//I am here :)'}/>
-                                        <ConsloeLog word={'Eat!'}/>
+                                        <ConsloeLog word={'Work hard!'} comment={'//I am here :)'}/>
                                     <div style={{color: 'aqua', paddingLeft: '30px'}}>{" };"}</div>
                                 </span>
                                 <span>
@@ -118,15 +110,8 @@ export const AboutMe = () => {
                             </div>
                             <div className={style.resultText}>
                                 <div className={style.tagWrapper}>
-                                    <span className={style.tag}>365</span>&nbsp; Sleep!
+                                    <span className={style.tag}>365</span>&nbsp; Work hard!
                                 </div>
-                                <div className={style.tagWrapper}>
-                                    <span className={style.tag}>365</span>&nbsp; Code!
-                                </div>
-                                <div className={style.tagWrapper}>
-                                    <span className={style.tag}>365</span>&nbsp; Eat!
-                                </div>
-
                                 <span className={style.finalText}>
                                         <Typewriter onInit={tw => {
                                             tw
