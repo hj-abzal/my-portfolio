@@ -1,8 +1,7 @@
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import {FontAwesomeIcon} from '@fortawesome/react-fontawesome';
 import React from 'react';
 import style from './Skill.module.scss';
-import { IconProp } from '@fortawesome/fontawesome-svg-core';
-//@ts-ignore
+import {IconProp} from '@fortawesome/fontawesome-svg-core';
 import Tilt from 'react-tilt'
 
 

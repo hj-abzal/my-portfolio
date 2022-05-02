@@ -13,9 +13,10 @@ export const Header = () => {
             <div className={style.content}>
 
                 <div className={style.logo}>
-                    <img className={style.appLogo}
+                    <img alt={'logo'} className={style.appLogo}
                          src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a7/React-icon.svg/1280px-React-icon.svg.png"/>
-                    <span>   <a className={style.title} href="https://reactjs.org/" target="_blank">React</a>  </span>
+                    <span>   <a className={style.title} href="https://reactjs.org/" rel="noreferrer"
+                                target="_blank">React</a>  </span>
                 </div>
                 <div className={style.nav}>
                     <Nav/>

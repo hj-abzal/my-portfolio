@@ -3,7 +3,6 @@ import SuperButton from '../common/components/c2-SuperButton/SuperButton';
 import {Title} from '../common/components/Title/Title';
 import style from './Contacts.module.scss';
 import emailjs from 'emailjs-com';
-import {setError} from '../Redux/portfolioReducer';
 import {useFormik} from "formik";
 
 export const Contacts = () => {
@@ -42,7 +41,6 @@ export const Contacts = () => {
                         }
                     })
                 }, (error) => {
-                    setError(error.text);
                 }).finally(() => setIsLoading(false));
         },
     });

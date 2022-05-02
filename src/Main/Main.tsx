@@ -2,9 +2,7 @@ import React from 'react';
 import style from './Main.module.scss';
 import myPhoto from '../assets/images/myPhoto.jpg'
 import Particles from 'react-particles-js';
-//@ts-ignore
 import Tilt from 'react-tilt'
-//@ts-ignore
 import Fade from 'react-reveal/Fade';
 
 
@@ -33,7 +31,7 @@ export const Main = () => {
             <Particles className={style.particles} params={ParticlesParams}/>
             <Fade top>
                 <div className={style.container}>
-                    <img className={style.photo} src={myPhoto}/>
+                    <img alt={'personalPhoto'} className={style.photo} src={myPhoto}/>
                     <Tilt options={{max: 25}}>
                         <div className={style.text}>
                             <div className={style.textInner}>

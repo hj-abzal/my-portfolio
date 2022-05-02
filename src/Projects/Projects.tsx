@@ -1,7 +1,7 @@
 import React from 'react';
 import style from './Projects.module.scss';
-import { Project } from './Project/Project';
-import { Title } from '../common/components/Title/Title';
+import {Project} from './Project/Project';
+import {Title} from '../common/components/Title/Title';
 import todoimg from './../assets/images/Без названия.png'
 import socislNetworkImg from './../assets/images/socialNetwork.jpg'
 import marvelIMG from './../assets/images/first.png'
@@ -10,7 +10,6 @@ import planktonicsPng from './../assets/images/planktonics.png'
 import map from './../assets/images/map.png'
 
 export const Projects = () => {
-
     const todoImg = {
         color: 'blue',
         backgroundImage: `url(${todoimg})`,

@@ -3,8 +3,8 @@ import style from './AboutMe.module.scss'
 import Typewriter from 'typewriter-effect';
 
 export const AboutMe = () => {
-    const logText = "Ready to consider project work and full-time employment";
 
+    const logText = "Ready to consider project work and full-time employment";
     return (
         <div id="Main" className={style.AboutMeBlock}>
             <div className={style.container}>
@@ -45,7 +45,7 @@ export const AboutMe = () => {
                                             color: 'aqua',
                                             paddingLeft: '30px',
                                         }}>const </i>
-                                        person = {"{ "}
+                                        personalInfo = {"{ "}
                                     </span>
                                 <span>
                                         <span style={{color: 'aqua', paddingLeft: '70px'}}>name:</span>&nbsp;"Abzal"
@@ -60,7 +60,7 @@ export const AboutMe = () => {
                                         <span style={{
                                             color: 'aqua',
                                             paddingLeft: '70px'
-                                        }}>workExperienceYear:</span>&nbsp;"1+"
+                                        }}>workExperience:</span>&nbsp;"2"
                                     </span>
                                 <span>
                                         <span style={{
@@ -85,7 +85,7 @@ export const AboutMe = () => {
                                         ) {"  {"}
                                     </span>
                                 <span>
-                                        <ConsloeLog word={'Work hard!'} comment={'//I am here :)'}/>
+                                        <ConsoleLog word={'Work and enjoy life!'} comment={'//I am here :)'}/>
                                     <div style={{color: 'aqua', paddingLeft: '30px'}}>{" };"}</div>
                                 </span>
                                 <span>
@@ -96,7 +96,7 @@ export const AboutMe = () => {
                                         );
                                     </span>
                                 <span style={{paddingLeft: '30px'}}> person.<span
-                                    style={{color: '#BDF078'}}>workExperienceYear</span> = <span>2</span>;</span>
+                                    style={{color: '#BDF078'}}>workExperienceYear</span> = <span>3</span>;</span>
                                 <span>&nbsp;{" };"}</span>
                                 <span>
                                         <span style={{color: '#BDF078'}}>&nbsp;&nbsp;logInfo</span>
@@ -136,26 +136,15 @@ export const AboutMe = () => {
 
 
 function logInfo() {
-    const person = {
-        name: "Abzal",
-        country: "Kazakhstan",
-        workExperienceYear: 1,
-        desiredStack: ['Angular/React', 'NgRx/Redux', "MEAN/MERN"],
-        desiredSalary: "1500$",
-    }
-
     for (let days = 0; days < 365; days++) {
-        console.log("Code"); //I am here :)
-        console.log("Eat");
-        console.log("Sleep");
+        console.log("Work and enjoy life!"); //I am here :)
     }
-    person.workExperienceYear = 2;
     console.log("Ready to consider project work and full-time employment");
 }
 
 logInfo();
 
-const ConsloeLog = (props: { word: string, comment?: string }) => {
+const ConsoleLog = (props: { word: string, comment?: string }) => {
     return <div>
         <i style={{
             color: 'aqua',

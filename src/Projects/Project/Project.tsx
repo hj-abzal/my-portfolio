@@ -1,15 +1,15 @@
-import React, { useState } from 'react';
+import React, {useState} from 'react';
 import SuperButton from '../../common/components/c2-SuperButton/SuperButton';
 import style from './Project.module.scss';
-//@ts-ignore
 import Tilt from 'react-tilt'
+
 type PropsType = {
     title: string
     description: string
     style?: { color: string; backgroundImage: string; }
     linkName?: string
-
 }
+
 export const Project = (props: PropsType) => {
     const [editMode, setEditMode] = useState(false)
     return (
