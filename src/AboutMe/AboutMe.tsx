@@ -86,7 +86,7 @@ export const AboutMe = () => {
                                     </span>
                                 <span>
                                         <ConsoleLog word={'Work and enjoy life!'} comment={'//I am here :)'}/>
-                                    <div style={{color: 'aqua', paddingLeft: '30px'}}>{" };"}</div>
+                                    <div style={{paddingLeft: '30px'}}>{" };"}</div>
                                 </span>
                                 <span>
                                         <i style={{color: 'aqua', paddingLeft: '30px'}}>console</i>
