@@ -1,12 +1,12 @@
 import React from 'react';
-import style from './AboutMe.module.scss'
+import style from './AboutMe.module.scss';
 import Typewriter from 'typewriter-effect';
 
 export const AboutMe = () => {
 
     const logText = "Ready to consider project work and full-time employment";
     return (
-        <div id="Main" className={style.AboutMeBlock}>
+        <div id="AboutMe" className={style.AboutMeBlock}>
             <div className={style.container}>
                 <div className={style.smallContainer}>
                     <div className={style.description}>
