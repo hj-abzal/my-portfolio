@@ -16,7 +16,7 @@ export const AboutMe = () => {
                         <div className={style.descText}>
                             <p>
                                 I’m a front-end developer who has a results-focused attitude to creating SPA, using the
-                                most popular frameworks like React, Vue, and Angular.
+                                most popular frameworks like React, React Native, Vue, and Angular.
                             </p>
                             <p>
                                 I have sufficient experience in Frontend development from small pet projects to large
@@ -60,7 +60,7 @@ export const AboutMe = () => {
                                         <span style={{
                                             color: 'aqua',
                                             paddingLeft: '70px'
-                                        }}>workExperience:</span>&nbsp;"2"
+                                        }}>workExperience:</span>&nbsp;"3"
                                     </span>
                                 <span>
                                         <span style={{
@@ -96,7 +96,7 @@ export const AboutMe = () => {
                                         );
                                     </span>
                                 <span style={{paddingLeft: '30px'}}> person.<span
-                                    style={{color: '#BDF078'}}>workExperienceYear</span> = <span>3</span>;</span>
+                                    style={{color: '#BDF078'}}>workExperienceYear</span> = <span>4</span>;</span>
                                 <span>&nbsp;{" };"}</span>
                                 <span>
                                         <span style={{color: '#BDF078'}}>&nbsp;&nbsp;logInfo</span>
